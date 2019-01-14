@@ -13153,7 +13153,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[46]:</div>
+<div class="prompt input_prompt">In&nbsp;[48]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Imports here</span>
@@ -13169,6 +13169,7 @@ div#notebook {
 <span class="kn">import</span> <span class="nn">torchvision.models</span> <span class="k">as</span> <span class="nn">models</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 <span class="kn">from</span> <span class="nn">collections</span> <span class="k">import</span> <span class="n">OrderedDict</span>
+<span class="kn">import</span> <span class="nn">json</span>
 </pre></div>
 
     </div>
@@ -13188,7 +13189,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[47]:</div>
+<div class="prompt input_prompt">In&nbsp;[49]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">train_dir</span> <span class="o">=</span> <span class="s1">&#39;/data/flowers/train&#39;</span>
@@ -13217,7 +13218,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[48]:</div>
+<div class="prompt input_prompt">In&nbsp;[50]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#TODO: 定义transforms</span>
@@ -13257,12 +13258,10 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[49]:</div>
+<div class="prompt input_prompt">In&nbsp;[51]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">json</span>
-
-<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;cat_to_name.json&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;cat_to_name.json&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
     <span class="n">cat_to_name</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
 </pre></div>
 
@@ -13303,7 +13302,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[50]:</div>
+<div class="prompt input_prompt">In&nbsp;[52]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># TODO</span>
@@ -13326,14 +13325,13 @@ div#notebook {
 
 <div class="output_subarea output_stream output_stderr output_text">
 <pre>/opt/conda/lib/python3.6/site-packages/torchvision-0.2.1-py3.6.egg/torchvision/models/densenet.py:212: UserWarning: nn.init.kaiming_normal is now deprecated in favor of nn.init.kaiming_normal_.
-  nn.init.kaiming_normal(m.weight.data)
 </pre>
 </div>
 </div>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[50]:</div>
+    <div class="prompt output_prompt">Out[52]:</div>
 
 
 
@@ -13860,7 +13858,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[51]:</div>
+<div class="prompt input_prompt">In&nbsp;[53]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># TODO</span>
@@ -13888,7 +13886,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[52]:</div>
+<div class="prompt input_prompt">In&nbsp;[54]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">collections</span> <span class="k">import</span> <span class="n">OrderedDict</span>
@@ -13919,7 +13917,7 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[52]:</div>
+    <div class="prompt output_prompt">Out[54]:</div>
 
 
 
@@ -14456,7 +14454,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[53]:</div>
+<div class="prompt input_prompt">In&nbsp;[55]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># TODO</span>
@@ -14485,7 +14483,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[54]:</div>
+<div class="prompt input_prompt">In&nbsp;[56]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># TODO: 训练网络，需要有loss和accuracy打印输出</span>
@@ -14516,7 +14514,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[55]:</div>
+<div class="prompt input_prompt">In&nbsp;[57]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># TODO:测试网络，使用验证集或者测试集，训练模型时使用验证集，测试模型最终结果使用测试集</span>
@@ -14543,7 +14541,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[56]:</div>
+<div class="prompt input_prompt">In&nbsp;[58]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">epoch</span> <span class="o">=</span> <span class="mi">10</span><span class="c1">#TODO 修改epoch次数</span>
@@ -14566,195 +14564,195 @@ div#notebook {
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>loss is: 4.662687301635742
-loss is: 4.645139122009278
-loss is: 4.624638557434082
-loss is: 4.5703166961669925
-loss is: 4.572665882110596
-loss is: 4.585870838165283
-loss is: 4.467530918121338
-loss is: 4.549728107452393
-loss is: 4.464260196685791
-loss is: 4.545471477508545
-loss is: 4.421892738342285
-loss is: 4.451794910430908
-loss is: 4.404237842559814
-loss is: 4.314869117736817
-loss is: 4.252959060668945
-loss is: 4.235297393798828
-loss is: 4.1932378768920895
-loss is: 4.051074457168579
-loss is: 4.080322504043579
-loss is: 3.9925040721893312
-acc is: 17.237163814180928
-loss is: 3.8968339443206785
-loss is: 3.841921091079712
-loss is: 3.7679214000701906
-loss is: 3.8374655723571776
-loss is: 3.6038496017456056
-loss is: 3.71945858001709
-loss is: 3.564283847808838
-loss is: 3.573506259918213
-loss is: 3.5007176399230957
-loss is: 3.3839086055755616
-loss is: 3.406457042694092
-loss is: 3.559733486175537
-loss is: 3.328067684173584
-loss is: 3.299741506576538
-loss is: 3.1868823051452635
-loss is: 3.232690191268921
-loss is: 3.1087438583374025
-loss is: 3.0699053764343263
-loss is: 2.9906493186950684
-loss is: 2.9121772766113283
-acc is: 46.69926650366748
-loss is: 2.888674592971802
-loss is: 2.886972427368164
-loss is: 2.7600372791290284
-loss is: 2.7819287300109865
-loss is: 2.761868381500244
-loss is: 2.7643996238708497
-loss is: 2.815286922454834
-loss is: 2.8090052604675293
-loss is: 2.677651834487915
-loss is: 2.776918649673462
-loss is: 2.6402487754821777
-loss is: 2.6947701454162596
-loss is: 2.818529987335205
-loss is: 2.6734670639038085
-loss is: 2.620224952697754
-loss is: 2.727725458145142
-loss is: 2.568085479736328
-loss is: 2.4032759189605715
-loss is: 2.4919613361358643
-loss is: 2.3593496322631835
-acc is: 60.880195599022
-loss is: 2.268805646896362
-loss is: 2.516097593307495
-loss is: 2.2254346132278444
-loss is: 2.3350841283798216
-loss is: 2.3676053047180177
-loss is: 2.4466668128967286
-loss is: 2.3159316539764405
-loss is: 2.2312381982803347
-loss is: 2.2703009128570555
-loss is: 2.2237851142883303
-loss is: 2.3547998905181884
-loss is: 2.2542162418365477
-loss is: 2.320043992996216
-loss is: 2.2659140110015867
-loss is: 2.2773900985717774
-loss is: 2.042260479927063
-loss is: 2.110597920417786
-loss is: 2.1737783908843995
-loss is: 2.3758259296417235
-loss is: 2.041980171203613
-acc is: 70.29339853300733
-loss is: 2.0207388401031494
-loss is: 1.955749797821045
-loss is: 2.016166925430298
-loss is: 1.9408506631851197
-loss is: 1.9846858263015748
-loss is: 2.1223821878433227
-loss is: 1.8693388938903808
-loss is: 1.9234241008758546
-loss is: 2.0854942560195924
-loss is: 1.9339474439620972
-loss is: 1.8317898035049438
-loss is: 1.941472840309143
-loss is: 2.0054886102676392
-loss is: 1.8746533870697022
-loss is: 2.0345144748687742
-loss is: 1.8370876550674438
-loss is: 1.9635494947433472
-loss is: 1.8728269338607788
-loss is: 1.9738823652267456
-loss is: 1.9648586750030517
-acc is: 72.73838630806846
-loss is: 1.8967505931854247
-loss is: 1.6576101541519166
-loss is: 1.7650214672088622
-loss is: 1.737836766242981
-loss is: 1.7840966701507568
-loss is: 1.9004308223724364
-loss is: 2.006279730796814
-loss is: 1.6002071619033813
-loss is: 2.0222849607467652
-loss is: 1.7371758222579956
-loss is: 1.8692771434783935
-loss is: 1.8411634922027589
-loss is: 1.7230721235275268
-loss is: 1.9327816486358642
-loss is: 1.6732755422592163
-loss is: 1.7446159362792968
-loss is: 1.734961986541748
-loss is: 1.6705588579177857
-loss is: 1.7763373374938964
-loss is: 1.5337763786315919
-acc is: 75.42787286063569
-loss is: 1.7121661186218262
-loss is: 1.6826715230941773
-loss is: 1.675518536567688
-loss is: 1.4778195381164552
-loss is: 1.5901474237442017
-loss is: 1.8869786739349366
-loss is: 1.7369458198547363
-loss is: 1.7116941928863525
-loss is: 1.651171875
-loss is: 1.6440798759460449
-loss is: 1.642200493812561
-loss is: 1.7164831399917602
-loss is: 1.6024926900863647
-loss is: 1.637149977684021
-loss is: 1.5551396131515502
-loss is: 1.6891371250152587
-loss is: 1.567763590812683
-loss is: 1.7426034212112427
-loss is: 1.8603055000305175
-loss is: 1.6212072134017945
-acc is: 77.87286063569681
-loss is: 1.5602257966995239
-loss is: 1.585454511642456
-loss is: 1.662249994277954
-loss is: 1.6355207443237305
-loss is: 1.5518773317337036
-loss is: 1.7030351638793946
-loss is: 1.5511109828948975
-loss is: 1.6918730974197387
-loss is: 1.5787670135498046
-loss is: 1.635466718673706
-loss is: 1.4370599746704102
-loss is: 1.626969861984253
-loss is: 1.609214997291565
-loss is: 1.499292778968811
-loss is: 1.5150789976119996
-loss is: 1.3870530366897582
-loss is: 1.5798782110214233
-loss is: 1.5098719120025634
-loss is: 1.5419888973236084
-loss is: 1.4824060440063476
-acc is: 81.78484107579462
-loss is: 1.4916271686553955
-loss is: 1.2733264207839965
-loss is: 1.4642372846603393
-loss is: 1.5435490369796754
-loss is: 1.5322759866714477
-loss is: 1.4782249927520752
-loss is: 1.5316432476043702
-loss is: 1.6290363073349
-loss is: 1.575878667831421
-loss is: 1.3731420516967774
-loss is: 1.3543042182922362
-loss is: 1.584651732444763
-loss is: 1.283989953994751
-loss is: 1.5951433658599854
-loss is: 1.414948582649231
-loss is: 1.4126941680908203
-loss is: 1.4267814397811889
-loss is: 1.5519800424575805
-loss is: 1.300667643547058
-loss is: 1.3633661985397338
-acc is: 83.25183374083129
+<pre>loss is: 4.6511890411376955
+loss is: 4.630600929260254
+loss is: 4.601111030578613
+loss is: 4.572874927520752
+loss is: 4.5428032875061035
+loss is: 4.5006529808044435
+loss is: 4.496191215515137
+loss is: 4.500609397888184
+loss is: 4.474421882629395
+loss is: 4.444978809356689
+loss is: 4.356191253662109
+loss is: 4.401125431060791
+loss is: 4.259538555145264
+loss is: 4.307481288909912
+loss is: 4.302001094818115
+loss is: 4.179360485076904
+loss is: 4.24769697189331
+loss is: 4.200662994384766
+loss is: 4.2025152206420895
+loss is: 4.025714302062989
+acc is: 17.48166259168704
+loss is: 4.000322246551514
+loss is: 3.8857728481292724
+loss is: 3.7934287548065186
+loss is: 3.7420089721679686
+loss is: 3.632741403579712
+loss is: 3.7188040256500243
+loss is: 3.677506446838379
+loss is: 3.5801863193511965
+loss is: 3.545165538787842
+loss is: 3.5166927337646485
+loss is: 3.354386806488037
+loss is: 3.5152113914489744
+loss is: 3.2487669467926024
+loss is: 3.384453821182251
+loss is: 3.296240234375
+loss is: 3.1096575260162354
+loss is: 3.155121898651123
+loss is: 3.0834238529205322
+loss is: 2.843814468383789
+loss is: 3.0353721141815186
+acc is: 44.00977995110024
+loss is: 3.065202569961548
+loss is: 2.9276670455932616
+loss is: 2.8700507640838624
+loss is: 2.9504130363464354
+loss is: 2.7535971641540526
+loss is: 2.7491190910339354
+loss is: 2.804015874862671
+loss is: 2.809102249145508
+loss is: 2.8423726558685303
+loss is: 2.5184188365936278
+loss is: 2.564306449890137
+loss is: 2.5423633098602294
+loss is: 2.72914137840271
+loss is: 2.4931363582611086
+loss is: 2.538658952713013
+loss is: 2.4317989349365234
+loss is: 2.4203574657440186
+loss is: 2.606189012527466
+loss is: 2.476678705215454
+loss is: 2.388991641998291
+acc is: 56.723716381418086
+loss is: 2.3294026374816896
+loss is: 2.451320934295654
+loss is: 2.55454740524292
+loss is: 2.294392490386963
+loss is: 2.3064029216766357
+loss is: 2.320439839363098
+loss is: 2.48850793838501
+loss is: 2.445887231826782
+loss is: 2.3560950756073
+loss is: 2.358179473876953
+loss is: 2.2673848152160643
+loss is: 2.2979723453521728
+loss is: 2.1618221759796143
+loss is: 2.195306396484375
+loss is: 2.10739529132843
+loss is: 2.126161074638367
+loss is: 1.9967891693115234
+loss is: 2.131212568283081
+loss is: 2.1529143333435057
+loss is: 2.2848894119262697
+acc is: 68.21515892420538
+loss is: 2.1176759958267213
+loss is: 2.027136301994324
+loss is: 1.9639360189437867
+loss is: 1.926009202003479
+loss is: 1.9269756078720093
+loss is: 1.9727493286132813
+loss is: 2.1678420543670653
+loss is: 2.12545108795166
+loss is: 2.0755648374557496
+loss is: 1.986574411392212
+loss is: 2.0673753023147583
+loss is: 1.966540312767029
+loss is: 1.9433456420898438
+loss is: 1.9310738801956178
+loss is: 2.089639139175415
+loss is: 2.066728186607361
+loss is: 1.8726651668548584
+loss is: 2.0397308826446534
+loss is: 1.9167059421539308
+loss is: 1.9829729080200196
+acc is: 73.96088019559902
+loss is: 1.730889630317688
+loss is: 1.8479544639587402
+loss is: 2.008559966087341
+loss is: 1.977049970626831
+loss is: 1.8580819845199585
+loss is: 1.8595322370529175
+loss is: 1.9223812818527222
+loss is: 1.764928126335144
+loss is: 1.834584355354309
+loss is: 1.6445775985717774
+loss is: 1.7553693771362304
+loss is: 1.603086233139038
+loss is: 1.9233319520950318
+loss is: 1.7956641912460327
+loss is: 1.9800762414932251
+loss is: 1.87100191116333
+loss is: 1.8445685625076294
+loss is: 1.843668031692505
+loss is: 1.9183422565460204
+loss is: 1.897600769996643
+acc is: 72.49388753056235
+loss is: 1.8165390729904174
+loss is: 1.8947715520858766
+loss is: 1.7940998315811156
+loss is: 1.7642908573150635
+loss is: 1.8090889692306518
+loss is: 1.7332848072052003
+loss is: 1.6345807313919067
+loss is: 1.6995116472244263
+loss is: 1.6100506782531738
+loss is: 1.5905148029327392
+loss is: 1.718606662750244
+loss is: 1.6559201240539552
+loss is: 1.7297850370407104
+loss is: 1.7940405130386352
+loss is: 1.6357166051864624
+loss is: 1.5864359378814696
+loss is: 1.5376893758773804
+loss is: 1.8022043466567994
+loss is: 1.7105663061141967
+loss is: 1.7117711305618286
+acc is: 78.239608801956
+loss is: 1.4913223743438722
+loss is: 1.6015539407730102
+loss is: 1.724885845184326
+loss is: 1.6571393728256225
+loss is: 1.5037904977798462
+loss is: 1.6773433208465576
+loss is: 1.4504740476608275
+loss is: 1.572913408279419
+loss is: 1.6344396829605103
+loss is: 1.6025161266326904
+loss is: 1.5589906454086304
+loss is: 1.5948060750961304
+loss is: 1.4573076248168946
+loss is: 1.6095355033874512
+loss is: 1.552645468711853
+loss is: 1.7604943990707398
+loss is: 1.491450881958008
+loss is: 1.564588189125061
+loss is: 1.62408127784729
+loss is: 1.524919056892395
+acc is: 80.80684596577017
+loss is: 1.491840386390686
+loss is: 1.5914226055145264
+loss is: 1.6115847110748291
+loss is: 1.6403531312942505
+loss is: 1.3819976329803467
+loss is: 1.7377929449081422
+loss is: 1.4648836612701417
+loss is: 1.5688727617263794
+loss is: 1.592796802520752
+loss is: 1.4556413650512696
+loss is: 1.51473228931427
+loss is: 1.6235496044158935
+loss is: 1.4133731603622437
+loss is: 1.514386248588562
+loss is: 1.5045317173004151
+loss is: 1.5863561868667602
+loss is: 1.5349947452545165
+loss is: 1.5401355743408203
+loss is: 1.4140003442764282
+loss is: 1.495814061164856
+acc is: 81.66259168704157
 </pre>
 </div>
 </div>
@@ -14773,7 +14771,7 @@ acc is: 83.25183374083129
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[57]:</div>
+<div class="prompt input_prompt">In&nbsp;[65]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># TODO: 在测试集上进行测试，需要输出结果</span>
@@ -14794,7 +14792,7 @@ acc is: 83.25183374083129
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>acc is: 83.51648351648352
+<pre>acc is: 82.90598290598291
 </pre>
 </div>
 </div>
@@ -14825,14 +14823,14 @@ acc is: 83.25183374083129
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[61]:</div>
+<div class="prompt input_prompt">In&nbsp;[60]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># TODO: Save the checkpoint </span>
 
 <span class="n">checkpoint</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;input_size&#39;</span><span class="p">:</span><span class="mi">1024</span><span class="p">,</span><span class="s1">&#39;output_size&#39;</span><span class="p">:</span><span class="mi">102</span><span class="p">,</span>
                <span class="s1">&#39;hidden_layers&#39;</span><span class="p">:[</span><span class="mi">500</span><span class="p">,</span><span class="mi">128</span><span class="p">],</span>
-             <span class="s1">&#39;state_dict&#39;</span><span class="p">:</span> <span class="n">model</span><span class="o">.</span><span class="n">classifier</span><span class="o">.</span><span class="n">state_dict</span><span class="p">(),</span>
+             <span class="s1">&#39;state_dict&#39;</span><span class="p">:</span> <span class="n">model</span><span class="o">.</span><span class="n">state_dict</span><span class="p">(),</span>
              <span class="s1">&#39;class_to_idx&#39;</span><span class="p">:</span><span class="n">train_datasets</span><span class="o">.</span><span class="n">class_to_idx</span><span class="p">}</span>
 <span class="n">torch</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="n">checkpoint</span><span class="p">,</span> <span class="s1">&#39;checkpoint.pth&#39;</span><span class="p">)</span>
 </pre></div>
@@ -14874,11 +14872,12 @@ B = checkpoint["B"]</code></pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[62]:</div>
+<div class="prompt input_prompt">In&nbsp;[61]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># TODO: Write a function that loads a checkpoint and rebuilds the model</span>
-<span class="k">def</span> <span class="nf">load_checkpoint</span><span class="p">(</span><span class="n">filepath</span><span class="p">,</span><span class="n">model</span><span class="p">):</span>
+<span class="k">def</span> <span class="nf">load_checkpoint</span><span class="p">(</span><span class="n">filepath</span><span class="p">):</span>
+    <span class="n">model</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">densenet121</span><span class="p">(</span><span class="n">pretrained</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
     <span class="n">checkpoint</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">filepath</span><span class="p">)</span>
     <span class="n">classifier</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">Sequential</span><span class="p">(</span><span class="n">OrderedDict</span><span class="p">([</span>
                           <span class="p">(</span><span class="s1">&#39;fc1&#39;</span><span class="p">,</span> <span class="n">nn</span><span class="o">.</span><span class="n">Linear</span><span class="p">(</span><span class="n">checkpoint</span><span class="p">[</span><span class="s1">&#39;input_size&#39;</span><span class="p">],</span> <span class="n">checkpoint</span><span class="p">[</span><span class="s1">&#39;hidden_layers&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">])),</span>
@@ -14889,7 +14888,7 @@ B = checkpoint["B"]</code></pre>
                           <span class="p">(</span><span class="s1">&#39;output&#39;</span><span class="p">,</span> <span class="n">nn</span><span class="o">.</span><span class="n">LogSoftmax</span><span class="p">(</span><span class="n">dim</span><span class="o">=</span><span class="mi">1</span><span class="p">))</span>
                           <span class="p">]))</span>
     <span class="n">model</span><span class="o">.</span><span class="n">classifier</span> <span class="o">=</span> <span class="n">classifier</span>
-    <span class="n">model</span><span class="o">.</span><span class="n">classifier</span><span class="o">.</span><span class="n">load_state_dict</span><span class="p">(</span><span class="n">checkpoint</span><span class="p">[</span><span class="s1">&#39;state_dict&#39;</span><span class="p">])</span>
+    <span class="n">model</span><span class="o">.</span><span class="n">load_state_dict</span><span class="p">(</span><span class="n">checkpoint</span><span class="p">[</span><span class="s1">&#39;state_dict&#39;</span><span class="p">])</span>
     <span class="k">return</span> <span class="n">model</span><span class="p">,</span><span class="n">checkpoint</span><span class="p">[</span><span class="s1">&#39;class_to_idx&#39;</span><span class="p">]</span>
 </pre></div>
 
@@ -14900,12 +14899,14 @@ B = checkpoint["B"]</code></pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[63]:</div>
+<div class="prompt input_prompt">In&nbsp;[64]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">model</span><span class="p">,</span> <span class="n">class_to_idx</span> <span class="o">=</span> <span class="n">load_checkpoint</span><span class="p">(</span><span class="s1">&#39;checkpoint.pth&#39;</span><span class="p">,</span><span class="n">model</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">model</span><span class="p">,</span> <span class="n">class_to_idx</span> <span class="o">=</span> <span class="n">load_checkpoint</span><span class="p">(</span><span class="s1">&#39;checkpoint.pth&#39;</span><span class="p">)</span>
 <span class="n">class_to_idx</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">class_to_idx</span><span class="o">.</span><span class="n">values</span><span class="p">(),</span> <span class="n">class_to_idx</span><span class="o">.</span><span class="n">keys</span><span class="p">()))</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">class_to_idx</span><span class="p">)</span>
+<span class="n">model</span><span class="o">.</span><span class="n">cuda</span><span class="p">()</span>
+<span class="n">model</span><span class="o">.</span><span class="n">eval</span><span class="p">()</span>
 <span class="n">model</span>
 </pre></div>
 
@@ -14922,6 +14923,18 @@ B = checkpoint["B"]</code></pre>
     <div class="prompt"></div>
 
 
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>/opt/conda/lib/python3.6/site-packages/torchvision-0.2.1-py3.6.egg/torchvision/models/densenet.py:212: UserWarning: nn.init.kaiming_normal is now deprecated in favor of nn.init.kaiming_normal_.
+  nn.init.kaiming_normal(m.weight.data)
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>{0: &#39;1&#39;, 1: &#39;10&#39;, 2: &#39;100&#39;, 3: &#39;101&#39;, 4: &#39;102&#39;, 5: &#39;11&#39;, 6: &#39;12&#39;, 7: &#39;13&#39;, 8: &#39;14&#39;, 9: &#39;15&#39;, 10: &#39;16&#39;, 11: &#39;17&#39;, 12: &#39;18&#39;, 13: &#39;19&#39;, 14: &#39;2&#39;, 15: &#39;20&#39;, 16: &#39;21&#39;, 17: &#39;22&#39;, 18: &#39;23&#39;, 19: &#39;24&#39;, 20: &#39;25&#39;, 21: &#39;26&#39;, 22: &#39;27&#39;, 23: &#39;28&#39;, 24: &#39;29&#39;, 25: &#39;3&#39;, 26: &#39;30&#39;, 27: &#39;31&#39;, 28: &#39;32&#39;, 29: &#39;33&#39;, 30: &#39;34&#39;, 31: &#39;35&#39;, 32: &#39;36&#39;, 33: &#39;37&#39;, 34: &#39;38&#39;, 35: &#39;39&#39;, 36: &#39;4&#39;, 37: &#39;40&#39;, 38: &#39;41&#39;, 39: &#39;42&#39;, 40: &#39;43&#39;, 41: &#39;44&#39;, 42: &#39;45&#39;, 43: &#39;46&#39;, 44: &#39;47&#39;, 45: &#39;48&#39;, 46: &#39;49&#39;, 47: &#39;5&#39;, 48: &#39;50&#39;, 49: &#39;51&#39;, 50: &#39;52&#39;, 51: &#39;53&#39;, 52: &#39;54&#39;, 53: &#39;55&#39;, 54: &#39;56&#39;, 55: &#39;57&#39;, 56: &#39;58&#39;, 57: &#39;59&#39;, 58: &#39;6&#39;, 59: &#39;60&#39;, 60: &#39;61&#39;, 61: &#39;62&#39;, 62: &#39;63&#39;, 63: &#39;64&#39;, 64: &#39;65&#39;, 65: &#39;66&#39;, 66: &#39;67&#39;, 67: &#39;68&#39;, 68: &#39;69&#39;, 69: &#39;7&#39;, 70: &#39;70&#39;, 71: &#39;71&#39;, 72: &#39;72&#39;, 73: &#39;73&#39;, 74: &#39;74&#39;, 75: &#39;75&#39;, 76: &#39;76&#39;, 77: &#39;77&#39;, 78: &#39;78&#39;, 79: &#39;79&#39;, 80: &#39;8&#39;, 81: &#39;80&#39;, 82: &#39;81&#39;, 83: &#39;82&#39;, 84: &#39;83&#39;, 85: &#39;84&#39;, 86: &#39;85&#39;, 87: &#39;86&#39;, 88: &#39;87&#39;, 89: &#39;88&#39;, 90: &#39;89&#39;, 91: &#39;9&#39;, 92: &#39;90&#39;, 93: &#39;91&#39;, 94: &#39;92&#39;, 95: &#39;93&#39;, 96: &#39;94&#39;, 97: &#39;95&#39;, 98: &#39;96&#39;, 99: &#39;97&#39;, 100: &#39;98&#39;, 101: &#39;99&#39;}
 </pre>
@@ -14930,7 +14943,7 @@ B = checkpoint["B"]</code></pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[63]:</div>
+    <div class="prompt output_prompt">Out[64]:</div>
 
 
 
@@ -15487,7 +15500,7 @@ B = checkpoint["B"]</code></pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[64]:</div>
+<div class="prompt input_prompt">In&nbsp;[66]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">PIL</span> <span class="k">import</span> <span class="n">Image</span>
@@ -15535,7 +15548,7 @@ B = checkpoint["B"]</code></pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[65]:</div>
+<div class="prompt input_prompt">In&nbsp;[67]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">imshow</span><span class="p">(</span><span class="n">image</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
@@ -15575,7 +15588,7 @@ B = checkpoint["B"]</code></pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[66]:</div>
+<div class="prompt input_prompt">In&nbsp;[68]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">img_tensor</span> <span class="o">=</span> <span class="n">process_image</span><span class="p">(</span><span class="n">train_dir</span><span class="o">+</span><span class="s2">&quot;/1/image_06735.jpg&quot;</span><span class="p">)</span>
@@ -15592,13 +15605,13 @@ B = checkpoint["B"]</code></pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[66]:</div>
+    <div class="prompt output_prompt">Out[68]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7f3c40457e80&gt;</pre>
+<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7f3c92f23128&gt;</pre>
 </div>
 
 </div>
@@ -15652,7 +15665,7 @@ B = checkpoint["B"]</code></pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[67]:</div>
+<div class="prompt input_prompt">In&nbsp;[71]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 不需要修改，运行即可</span>
@@ -15689,7 +15702,7 @@ B = checkpoint["B"]</code></pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[68]:</div>
+<div class="prompt input_prompt">In&nbsp;[72]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">model</span><span class="o">.</span><span class="n">cuda</span><span class="p">()</span>
@@ -15712,10 +15725,10 @@ B = checkpoint["B"]</code></pre>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>tensor([[ 0.4226,  0.2031,  0.0640,  0.0490,  0.0442]], device=&#39;cuda:0&#39;)
-tensor([[  0,  49,  13,  84,  50]], device=&#39;cuda:0&#39;)
-[0.42264679074287415, 0.20306989550590515, 0.06395623087882996, 0.049038078635931015, 0.044159214943647385]
-[&#39;1&#39;, &#39;51&#39;, &#39;19&#39;, &#39;83&#39;, &#39;52&#39;]
+<pre>tensor([[ 0.4505,  0.1424,  0.0860,  0.0635,  0.0520]], device=&#39;cuda:0&#39;)
+tensor([[ 49,   0,  84,  13,  53]], device=&#39;cuda:0&#39;)
+[0.4505045413970947, 0.14241357147693634, 0.0859593078494072, 0.06351864337921143, 0.05197347700595856]
+[&#39;51&#39;, &#39;1&#39;, &#39;83&#39;, &#39;19&#39;, &#39;55&#39;]
 </pre>
 </div>
 </div>
@@ -15759,7 +15772,7 @@ tensor([[  0,  49,  13,  84,  50]], device=&#39;cuda:0&#39;)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[144]:</div>
+<div class="prompt input_prompt">In&nbsp;[73]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># TODO: Display an image along with the top 5 classes</span>
@@ -15793,7 +15806,7 @@ tensor([[  0,  49,  13,  84,  50]], device=&#39;cuda:0&#39;)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[145]:</div>
+<div class="prompt input_prompt">In&nbsp;[74]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#直接运行</span>
@@ -15826,9 +15839,9 @@ tensor([[  0,  49,  13,  84,  50]], device=&#39;cuda:0&#39;)
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>tensor([[ 0.6573,  0.0423,  0.0422,  0.0414,  0.0399]], device=&#39;cuda:0&#39;)
-tensor([[  3,  99,  90,  56,  72]], device=&#39;cuda:0&#39;)
-[0.6573005318641663, 0.04230483993887901, 0.04219086095690727, 0.04138600081205368, 0.03990495204925537]
+<pre>tensor([[ 0.3719,  0.0842,  0.0818,  0.0798,  0.0733]], device=&#39;cuda:0&#39;)
+tensor([[  3,  21,  90,  56,  98]], device=&#39;cuda:0&#39;)
+[0.3718686103820801, 0.08424408733844757, 0.08180424571037292, 0.07980090379714966, 0.07333474606275558]
 </pre>
 </div>
 </div>
@@ -15841,7 +15854,7 @@ tensor([[  3,  99,  90,  56,  72]], device=&#39;cuda:0&#39;)
 
 
 <div class="output_png output_subarea ">
-<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAccAAAD8CAYAAAACNm9oAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAADl0RVh0U29mdHdhcmUAbWF0cGxvdGxpYiB2ZXJzaW9uIDIuMS4wLCBodHRwOi8vbWF0cGxvdGxpYi5vcmcvpW3flQAAFkFJREFUeJzt3X+UXWV97/H3h4AJXCBUiW2KyChELQbEErggyILC8lpRtBp/ootUa+rVu7C1XItX8HrRVsS7Cv6spi4LKv5YKApCqyIFQX4nSAhBEIV4gXK1oEYv8pvv/ePsLMbHSebMZM6cmfB+rXXW2bP3s5/9feZk8pln733OpKqQJEmP2WrYBUiSNNMYjpIkNQxHSZIahqMkSQ3DUZKkhuEoSVLDcJQkqWE4SpLUMBwlSWpsPewCNDk777xzjYyMDLsMSZpVVq1adXdVLRivneE4S42MjLBy5cphlyFJs0qSn/TTztOqkiQ1DEdJkhqGoyRJDcNRkqSG4ShJUsNwlCSpYThKktQwHCVJahiOkiQ1/IScWWrNnesZOf78Kelr3clHTkk/krSlcOYoSVLDcJQkqWE4SpLUMBwlSWoYjpIkNQxHSZIahuOAJTk9ydJh1yFJ6p/hKElSw3AcR5KvJ1mVZG2S5UmOSnJd97g5yW1du/ckuSbJDUlWJMkYfe2b5Ltdf99KsrBb/+Zu39VJvppku+kepyTpMYbj+N5YVfsCS4Bjgcuqap+q2gdYDfzvrt3Hqmq/qloMbAu8eHQnSbYBPgos7fr7DPB33eazu32fA/wAeNPARyVJ2ig/Pm58xyb5s255V2ARcE+SdwL3VdXHu22Hdeu2A54IrAW+MaqfZwKLgQu6SeUc4K5u2+Ik7wd2ArYHvjVWIUmWA8sB5uy4YGpGJ0n6HYbjJiQ5FDgCOLCqfpPkYmBeksOBVwKHdO3mAZ8AllTV7UneC8xruwPWVtWBYxzqdOBlVbU6yTLg0LHqqaoVwAqAuQsX1eaMTZK0cZ5W3bT5wC+6YHwWcACwG70gfFVV3de12xCEdyfZHhjr7tSbgQVJDoTeadYkz+627QDc1Z16PXpAY5Ek9cmZ46Z9E3hLkuvphduVwAjwJOBr3enRf6+qFyX5J2ANsA64pu2oqh7s3tLxkSTz6X3vT6N3+vVE4CrgJ10fOwx2WJKkTUmVZ+dmo7kLF9XCY06bkr78k1WSHi+SrKqqJeO187SqJEkNw1GSpIbhKElSw3CUJKlhOEqS1DAcJUlq+D7HWWqvXeaz0rdgSNJAOHOUJKlhOEqS1DAcJUlqGI6SJDUMR0mSGoajJEkNw1GSpIbhKElSw3CUJKlhOEqS1DAcJUlqGI6SJDUMR0mSGoajJEkNw1GSpIbhKElSw3CUJKlhOEqS1DAcJUlqGI6SJDUMR0mSGlsPuwBNzpo71zNy/PlT1t+6k4+csr4kabZz5ihJUsNwlCSpYThKktQwHCVJahiOkiQ1DEdJkhqG4xRL8i9Jdhp2HZKkyfN9jhuRZOuqenii+1XViwZRjyRp+mzxM8ckJya5KckFSb6Y5Lgkuyf5ZpJVSS5N8qyu7elJ/iHJRcAHk+yf5PIk3++en9m1W5bk7K6PW5KcMup465LsnGQkyQ2j1h+X5L3d8sVJTk1ySZIfJNmv6++WJO+f3u+QJKm1Rc8ckywBXgE8l95YrwVWASuAt1TVLUn+M/AJ4E+63Z4BHFFVjyTZETikqh5OcgTw911/APt0/T4A3Jzko1V1+wTKe7CqDknyduAcYF/g58CPk5xaVfdsxtAlSZthiw5H4GDgnKq6DyDJN4B5wPOAs5JsaDd31D5nVdUj3fJ84Iwki4ACthnV7sKqWt/1eyOwGzCRcDy3e14DrK2qu7q+bgV2BX4nHJMsB5YDzNlxwQQOJUmaiC09HDPGuq2AX1bVPhvZ595Ry+8DLqqqP0syAlw8atsDo5Yf4Xe/lw/z26et5zXbN+z/aNPXo2P0BUBVraA362XuwkW1kfolSZtpS7/m+D3gJUnmJdkeOBL4DXBbklcCpOc5G9l/PnBnt7xsgsf+KfDkJE9KMhd48YSrlyQNxRYdjlV1Db3Tl6uBs4GVwHrgaOBNSVYDa4GXbqSLU4APJLkMmDPBYz8EnARcBZwH3DSZMUiSpl+qtuyzc0m2r6r/l2Q74BJgeVVdO+y6NtfchYtq4TGnTVl//skqSY8HSVZV1ZLx2m3p1xwBViTZk941vzO2hGCUJA3WFh+OVfW6YdcgSZpdtuhrjpIkTYbhKElSw3CUJKmxxV9z3FLttct8VnqHqSQNhDNHSZIahqMkSQ3DUZKkhuEoSVLDcJQkqWE4SpLUMBwlSWoYjpIkNQxHSZIahqMkSQ3DUZKkhuEoSVLDcJQkqWE4SpLUMBwlSWoYjpIkNQxHSZIahqMkSQ3DUZKkhuEoSVLDcJQkqbF1P42SbAf8DfDUqnpzkkXAM6vqvIFWp41ac+d6Ro4/f8r6W3fykVPWlyTNdv3OHP8ZeAA4sPv6DuD9A6lIkqQh6zccd6+qU4CHAKrqPiADq0qSpCHqNxwfTLItUABJdqc3k5QkaYvT1zVH4H8C3wR2TXImcBCwbFBFSZI0TH2FY1VdkORa4AB6p1PfXlV3D7QySZKGZCJv5dgFmAM8ATgkycsHU5IkScPV71s5PgPsDawFHu1WF3D2gOqaFkn+ClhRVb8Zdi2SpJmj32uOB1TVngOtZDj+Cvg80Hc4JplTVY9sbhtJ0szV72nVK5LM2HBM8s4kx3bLpyb5t2758CSfT/KPSVYmWZvkf3XbjgX+ELgoyUXduhckuSLJtUnOSrJ9t35dkvck+R7wyiR7JPlOktVd292THJrkoiRfANZ0+70+ydVJrkvyqSRzusfpSW5IsibJX2+oJ8mNSa5P8qXp/h5Kkh7T78zxDHoB+X/pvYUjQFXV3gOrbGIuofcJPh8BlgBzk2wDHAxcCpxVVT9PMge4MMneVfWRJO8ADququ5PsDJwAHFFV9yb5W+AdwEndMe6vqoMBklwFnFxVX0syj94vGbsC+wOLq+q2JH8EvBo4qKoeSvIJ4Gh6p6Z3qarFXV87df0fDzytqh4YtU6SNAT9huNngDfQmxE9Ok7bYVgF7JtkB3rhfS29kHw+cCzwqiTL6Y13IbAncH3TxwHd+suSQO/GoytGbf8yQHeMXarqawBVdX+3HuDqqrqta384sC9wTbdtW+BnwDeApyf5KHA+8O2u/fXAmUm+Dnx9rEF2Y1gOMGfHBX1/cyRJE9NvOP6fqjp3oJVshm5mtg74c+ByekFzGLA7cB9wHLBfVf0iyenAvDG6CXBBVb12I4e5d1S7jbl31HKAM6rqXb9zoOQ5wH8B3ga8CngjcCRwCHAUcGKSZ1fVw804VwArAOYuXFSbqEOStBn6veZ4U5IvJHltkpdveAy0som7hF4IXkLvVOpbgOuAHemF1vokvw/86ah9fg3s0C1fCRyUZA/ofdh6kme0B6mqXwF3JHlZ125u98HsrQuBpUme3LV7YpLdutO3W1XVV4ETgT9OshWwa1VdBLwT2AnYfjO+F5KkzdDvzHFbeqcrXzBq3Ux7K8elwLuBK7prhvcDl1bV6iTfp3et71bgslH7rAD+NcldVXVYkmXAF5PM7bafAPxwjGO9AfhUkpPofd7sK9sGVXVjkhOAb3fh9xC9meJ9wD936wDeRe/9o59PMp/ejPPUqvrl5L8VkqTNkSrPzs1GcxcuqoXHnDZl/fknqyQ9HiRZVVVLxmvX74cAzAPeBDybUdfrquqNk65QkqQZqt9rjp8D/oDeTSTfBZ5C73qdJElbnH7DcY+qOhG4t6rOoHdn5V6DK0uSpOHpNxwf6p5/mWQxMB8YGUhFkiQNWb93q65I8nv07t48l97bDE4cWFWSJA1Rv+H4OeAV9GaLZ3Trfn8QBUmSNGz9huM5wHp6H9P2wODKUb/22mU+K337hSQNRL/h+JSqeuFAK5EkaYbo94acy5N4d6ok6XGh35njwcCyJLcxM/9klSRJU6bfcPzT8ZtIkrRl6Cscq+ongy5EkqSZot9rjpIkPW4YjpIkNQxHSZIahqMkSQ3DUZKkhuEoSVLDcJQkqWE4SpLUMBwlSWoYjpIkNQxHSZIahqMkSQ3DUZKkhuEoSVLDcJQkqWE4SpLU6OuPHWvmWXPnekaOP3/K+lt38pFT1pckzXbOHCVJahiOkiQ1DEdJkhqGoyRJDcNRkqSG4ShJUsNwnEJJDk1yXre8LMnHhl2TJGniDEdJkhqGYyPJSJKbknw6yQ1JzkxyRJLLktySZP/ucXmS73fPzxynz92SXJjk+u75qUnmJLk1PTsleTTJIV37S5PsMT0jliS1DMex7QF8GNgbeBbwOuBg4DjgfwA3AYdU1XOB9wB/P05/HwM+W1V7A2cCH6mqR4AfAnt2fa8Cnp9kLvCUqvrRlI9KktQXPz5ubLdV1RqAJGuBC6uqkqwBRoD5wBlJFgEFbDNOfwcCL++WPwec0i1fChwCPA34APBm4LvANWN1kmQ5sBxgzo4LJjUwSdL4nDmO7YFRy4+O+vpRer9QvA+4qKoWAy8B5k2w/+qeLwWeD+wP/AuwE3AocMmYO1WtqKolVbVkznbzJ3hISVK/DMfJmQ/c2S0v66P95cBruuWjge91y1cBzwMerar7geuAv6QXmpKkITEcJ+cU4ANJLgPm9NH+WODPk1wPvAF4O0BVPQDcDlzZtbsU2AFYM+UVS5L6lqoav5VmnLkLF9XCY06bsv78k1WSHg+SrKqqJeO1c+YoSVLDcJQkqWE4SpLUMBwlSWoYjpIkNfyEnFlqr13ms9I7TCVpIJw5SpLUMBwlSWoYjpIkNQxHSZIahqMkSQ3DUZKkhuEoSVLDcJQkqWE4SpLUMBwlSWoYjpIkNQxHSZIahqMkSQ3DUZKkhuEoSVLDcJQkqWE4SpLUMBwlSWoYjpIkNQxHSZIahqMkSY2th12AJmfNnesZOf78YZchSdNq3clHTstxnDlKktQwHCVJahiOkiQ1DEdJkhqGoyRJDcNRkqTGQMIxyU5J3jqIvicrybIkfzjsOiRJM9+gZo47AWOGY5I5AzrmeJYBkwrHYdScxPegStKQDCocTwZ2T3Jdkg8lOTTJRUm+AKxJMpLkhg2NkxyX5L3d8sVJTk1ySZIfJNkvydlJbkny/q7NSJKbkpyR5PokX0myXbdt3yTfTbIqybeSLEyyFFgCnNnVtO3oYpPskeQ7SVYnuTbJ7m3NXbvXJ7m66+NTG0IzyQuSXNHte1aS7bv165J8sNvn6iR7dOsXJPlqkmu6x0Hd+vcmWZHk28BnB/TaSJLGMahwPB74cVXtU1X/vVu3P/Duqtqzj/0frKpDgE8C5wBvAxYDy5I8qWvzTGBFVe0N/Ap4a5JtgI8CS6tqX+AzwN9V1VeAlcDRXU33Ncc7E/h4VT0HeB5wV1tzkj8CXg0cVFX7AI8ARyfZGTgBOKKq/rg7zjtG9f2rqtof+BhwWrfuw8CpVbUf8Arg06Pa7wu8tKpe18f3SZI0ANN56u7qqrqtz7bnds9rgLVVdRdAkluBXYFfArdX1WVdu88DxwLfpBeiFyQBmMNjQTemJDsAu1TV1wCq6v5ufVvz4fSC65pu27bAz4ADgD2By7r1TwCuGHWIL456PrVbPgLYs2sPsGNXB8C5Y4T3hlqXA8sB5uy4YFPDkiRthukMx3tHLT/Mb89a5zVtH+ieHx21vOHrDTVXs08BoRemB06grmxi2+iaA5xRVe/6rZ2TlwAXVNVrN9JHjbG8FXBgG4JdWI4+5m93VLUCWAEwd+GidvySpCkyqNOqvwZ22MT2nwJPTvKkJHOBF0/iGE9NsiEEXwt8D7gZWLBhfZJtkjx7UzVV1a+AO5K8rNtn7obrl40LgaVJnty1e2KS3YArgYNGXU/cLskzRu336lHPG2aU3wb+24YGSfaZ2NAlSYM0kHCsqnvonWa8IcmHxtj+EHAScBVwHnDTJA7zA+CYJNcDTwT+saoeBJYCH0yyGriO3jVEgNOBT451Qw7wBuDYrq/LgT8Yo+Yb6V1b/HbX7gJgYVX9B707Yb/Yrb8SeNaoXecmuQp4O/DX3bpjgSXdzUQ3Am+ZxPglSQOSqtl3di7JCHBeVS0ecimblGQdsKSq7p7qvucuXFQLjzlt/IaStAXZ3D9ZlWRVVS0Zr52fkCNJUmNWvtG8qtbRuyt1RquqkWHXIEmaOGeOkiQ1DEdJkhqGoyRJDcNRkqTGrLwhR7DXLvNZuZm3NEuSxubMUZKkhuEoSVLDcJQkqWE4SpLUMBwlSWoYjpIkNQxHSZIahqMkSQ3DUZKkhuEoSVIjVTXsGjQJSX4N3DzsOjbDzsDdwy5iM832Mcz2+sExzASzrf7dqmrBeI38bNXZ6+aqWjLsIiYrycrZXD/M/jHM9vrBMcwEs73+jfG0qiRJDcNRkqSG4Th7rRh2AZtpttcPs38Ms71+cAwzwWyvf0zekCNJUsOZoyRJDcNxhkvywiQ3J/lRkuPH2D43yZe77VclGZn+Kjeuj/oPSXJtkoeTLB1GjePpYwzvSHJjkuuTXJhkt2HUuTF91P+WJGuSXJfke0n2HEadmzLeGEa1W5qkksyouyf7eA2WJfmP7jW4LslfDKPOTennNUjyqu5nYW2SL0x3jVOqqnzM0AcwB/gx8HTgCcBqYM+mzVuBT3bLrwG+POy6J1j/CLA38Flg6bBrnuQYDgO265b/6yx8DXYctXwU8M1h1z3RMXTtdgAuAa4Elgy77gm+BsuAjw271s0cwyLg+8DvdV8/edh1b87DmePMtj/wo6q6taoeBL4EvLRp81LgjG75K8DhSTKNNW7KuPVX1bqquh54dBgF9qGfMVxUVb/pvrwSeMo017gp/dT/q1Ff/idgpt2I0M/PAcD7gFOA+6ezuD70W/9M1s8Y3gx8vKp+AVBVP5vmGqeU4Tiz7QLcPurrO7p1Y7apqoeB9cCTpqW68fVT/0w30TG8CfjXgVY0MX3Vn+RtSX5ML1yOnaba+jXuGJI8F9i1qs6bzsL61O+/oVd0p+a/kmTX6Smtb/2M4RnAM5JcluTKJC+ctuoGwHCc2caaAba/1ffTZlhmcm396nsMSV4PLAE+NNCKJqav+qvq41W1O/C3wAkDr2piNjmGJFsBpwJ/M20VTUw/r8E3gJGq2hv4Do+dDZop+hnD1vROrR4KvBb4dJKdBlzXwBiOM9sdwOjfIJ8C/PvG2iTZGpgP/HxaqhtfP/XPdH2NIckRwLuBo6rqgWmqrR8TfQ2+BLxsoBVN3Hhj2AFYDFycZB1wAHDuDLopZ9zXoKruGfXv5p+Afaeptn71+3/ROVX1UFXdRu+znxdNU31TznCc2a4BFiV5WpIn0Lvh5tymzbnAMd3yUuDfqrsaPgP0U/9MN+4YulN6n6IXjDPtOks/9Y/+D+xI4JZprK8fmxxDVa2vqp2raqSqRuhd9z2qqlYOp9zf0c9rsHDUl0cBP5jG+vrRz8/y1+ndnEaSnemdZr11WqucSsO+I8jHph/Ai4Af0rtT7N3dupPo/fADzAPOAn4EXA08fdg1T7D+/ej9xnkvcA+wdtg1T2IM3wF+ClzXPc4dds0TrP/DwNqu9ouAZw+75omOoWl7MTPobtU+X4MPdK/B6u41eNawa57EGAL8A3AjsAZ4zbBr3pyHn5AjSVLD06qSJDUMR0mSGoajJEkNw1GSpIbhKElSw3CUJKlhOEqS1DAcJUlq/H9gwOA+Vd/lhAAAAABJRU5ErkJggg==
+<img src="data:image/png;base64,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
 "
 >
 </div>
