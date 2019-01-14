@@ -13153,7 +13153,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[48]:</div>
+<div class="prompt input_prompt">In&nbsp;[49]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Imports here</span>
@@ -13170,6 +13170,9 @@ div#notebook {
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 <span class="kn">from</span> <span class="nn">collections</span> <span class="k">import</span> <span class="n">OrderedDict</span>
 <span class="kn">import</span> <span class="nn">json</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sb</span>
+<span class="kn">from</span> <span class="nn">PIL</span> <span class="k">import</span> <span class="n">Image</span>
 </pre></div>
 
     </div>
@@ -13189,7 +13192,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[49]:</div>
+<div class="prompt input_prompt">In&nbsp;[50]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">train_dir</span> <span class="o">=</span> <span class="s1">&#39;/data/flowers/train&#39;</span>
@@ -13218,7 +13221,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[50]:</div>
+<div class="prompt input_prompt">In&nbsp;[51]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#TODO: 定义transforms</span>
@@ -13258,7 +13261,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[51]:</div>
+<div class="prompt input_prompt">In&nbsp;[52]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;cat_to_name.json&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
@@ -13302,7 +13305,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[52]:</div>
+<div class="prompt input_prompt">In&nbsp;[53]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># TODO</span>
@@ -13331,7 +13334,7 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[52]:</div>
+    <div class="prompt output_prompt">Out[53]:</div>
 
 
 
@@ -13858,7 +13861,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[53]:</div>
+<div class="prompt input_prompt">In&nbsp;[54]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># TODO</span>
@@ -13886,7 +13889,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[54]:</div>
+<div class="prompt input_prompt">In&nbsp;[55]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">collections</span> <span class="k">import</span> <span class="n">OrderedDict</span>
@@ -13917,7 +13920,7 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[54]:</div>
+    <div class="prompt output_prompt">Out[55]:</div>
 
 
 
@@ -14454,7 +14457,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[55]:</div>
+<div class="prompt input_prompt">In&nbsp;[56]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># TODO</span>
@@ -14483,7 +14486,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[56]:</div>
+<div class="prompt input_prompt">In&nbsp;[57]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># TODO: 训练网络，需要有loss和accuracy打印输出</span>
@@ -14514,7 +14517,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[57]:</div>
+<div class="prompt input_prompt">In&nbsp;[58]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># TODO:测试网络，使用验证集或者测试集，训练模型时使用验证集，测试模型最终结果使用测试集</span>
@@ -14541,7 +14544,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[58]:</div>
+<div class="prompt input_prompt">In&nbsp;[59]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">epoch</span> <span class="o">=</span> <span class="mi">10</span><span class="c1">#TODO 修改epoch次数</span>
@@ -14564,195 +14567,195 @@ div#notebook {
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>loss is: 4.6511890411376955
-loss is: 4.630600929260254
-loss is: 4.601111030578613
-loss is: 4.572874927520752
-loss is: 4.5428032875061035
-loss is: 4.5006529808044435
-loss is: 4.496191215515137
-loss is: 4.500609397888184
-loss is: 4.474421882629395
-loss is: 4.444978809356689
-loss is: 4.356191253662109
-loss is: 4.401125431060791
-loss is: 4.259538555145264
-loss is: 4.307481288909912
-loss is: 4.302001094818115
-loss is: 4.179360485076904
-loss is: 4.24769697189331
-loss is: 4.200662994384766
-loss is: 4.2025152206420895
-loss is: 4.025714302062989
-acc is: 17.48166259168704
-loss is: 4.000322246551514
-loss is: 3.8857728481292724
-loss is: 3.7934287548065186
-loss is: 3.7420089721679686
-loss is: 3.632741403579712
-loss is: 3.7188040256500243
-loss is: 3.677506446838379
-loss is: 3.5801863193511965
-loss is: 3.545165538787842
-loss is: 3.5166927337646485
-loss is: 3.354386806488037
-loss is: 3.5152113914489744
-loss is: 3.2487669467926024
-loss is: 3.384453821182251
-loss is: 3.296240234375
-loss is: 3.1096575260162354
-loss is: 3.155121898651123
-loss is: 3.0834238529205322
-loss is: 2.843814468383789
-loss is: 3.0353721141815186
-acc is: 44.00977995110024
-loss is: 3.065202569961548
-loss is: 2.9276670455932616
-loss is: 2.8700507640838624
-loss is: 2.9504130363464354
-loss is: 2.7535971641540526
-loss is: 2.7491190910339354
-loss is: 2.804015874862671
-loss is: 2.809102249145508
-loss is: 2.8423726558685303
-loss is: 2.5184188365936278
-loss is: 2.564306449890137
-loss is: 2.5423633098602294
-loss is: 2.72914137840271
-loss is: 2.4931363582611086
-loss is: 2.538658952713013
-loss is: 2.4317989349365234
-loss is: 2.4203574657440186
-loss is: 2.606189012527466
-loss is: 2.476678705215454
-loss is: 2.388991641998291
-acc is: 56.723716381418086
-loss is: 2.3294026374816896
-loss is: 2.451320934295654
-loss is: 2.55454740524292
-loss is: 2.294392490386963
-loss is: 2.3064029216766357
-loss is: 2.320439839363098
-loss is: 2.48850793838501
-loss is: 2.445887231826782
-loss is: 2.3560950756073
-loss is: 2.358179473876953
-loss is: 2.2673848152160643
-loss is: 2.2979723453521728
-loss is: 2.1618221759796143
-loss is: 2.195306396484375
-loss is: 2.10739529132843
-loss is: 2.126161074638367
-loss is: 1.9967891693115234
-loss is: 2.131212568283081
-loss is: 2.1529143333435057
-loss is: 2.2848894119262697
-acc is: 68.21515892420538
-loss is: 2.1176759958267213
-loss is: 2.027136301994324
-loss is: 1.9639360189437867
-loss is: 1.926009202003479
-loss is: 1.9269756078720093
-loss is: 1.9727493286132813
-loss is: 2.1678420543670653
-loss is: 2.12545108795166
-loss is: 2.0755648374557496
-loss is: 1.986574411392212
-loss is: 2.0673753023147583
-loss is: 1.966540312767029
-loss is: 1.9433456420898438
-loss is: 1.9310738801956178
-loss is: 2.089639139175415
-loss is: 2.066728186607361
-loss is: 1.8726651668548584
-loss is: 2.0397308826446534
-loss is: 1.9167059421539308
-loss is: 1.9829729080200196
-acc is: 73.96088019559902
-loss is: 1.730889630317688
-loss is: 1.8479544639587402
-loss is: 2.008559966087341
-loss is: 1.977049970626831
-loss is: 1.8580819845199585
-loss is: 1.8595322370529175
-loss is: 1.9223812818527222
-loss is: 1.764928126335144
-loss is: 1.834584355354309
-loss is: 1.6445775985717774
-loss is: 1.7553693771362304
-loss is: 1.603086233139038
-loss is: 1.9233319520950318
-loss is: 1.7956641912460327
-loss is: 1.9800762414932251
-loss is: 1.87100191116333
-loss is: 1.8445685625076294
-loss is: 1.843668031692505
-loss is: 1.9183422565460204
-loss is: 1.897600769996643
-acc is: 72.49388753056235
-loss is: 1.8165390729904174
-loss is: 1.8947715520858766
-loss is: 1.7940998315811156
-loss is: 1.7642908573150635
-loss is: 1.8090889692306518
-loss is: 1.7332848072052003
-loss is: 1.6345807313919067
-loss is: 1.6995116472244263
-loss is: 1.6100506782531738
-loss is: 1.5905148029327392
-loss is: 1.718606662750244
-loss is: 1.6559201240539552
-loss is: 1.7297850370407104
-loss is: 1.7940405130386352
-loss is: 1.6357166051864624
-loss is: 1.5864359378814696
-loss is: 1.5376893758773804
-loss is: 1.8022043466567994
-loss is: 1.7105663061141967
-loss is: 1.7117711305618286
+<pre>loss is: 4.647657299041748
+loss is: 4.624884510040284
+loss is: 4.560053443908691
+loss is: 4.6289365768432615
+loss is: 4.5751197814941404
+loss is: 4.542081737518311
+loss is: 4.558591842651367
+loss is: 4.475260162353516
+loss is: 4.487506294250489
+loss is: 4.436735916137695
+loss is: 4.410935878753662
+loss is: 4.426374530792236
+loss is: 4.310113143920899
+loss is: 4.281422710418701
+loss is: 4.294136905670166
+loss is: 4.235320091247559
+loss is: 4.285410594940186
+loss is: 4.146664714813232
+loss is: 4.159907054901123
+loss is: 4.101636552810669
+acc is: 17.726161369193154
+loss is: 3.9772409439086913
+loss is: 4.002543020248413
+loss is: 3.780060815811157
+loss is: 3.822435712814331
+loss is: 3.785963296890259
+loss is: 3.7152307987213136
+loss is: 3.8011632919311524
+loss is: 3.599558639526367
+loss is: 3.6662614345550537
+loss is: 3.609115552902222
+loss is: 3.4927916526794434
+loss is: 3.4274904251098635
+loss is: 3.1984251976013183
+loss is: 3.306386423110962
+loss is: 3.2203079223632813
+loss is: 3.159730815887451
+loss is: 3.1895519733428954
+loss is: 3.1776803016662596
+loss is: 3.077260208129883
+loss is: 3.0285888671875
+acc is: 47.31051344743276
+loss is: 3.0522642135620117
+loss is: 2.891726589202881
+loss is: 2.8553960800170897
+loss is: 2.7956451416015624
+loss is: 2.7568812370300293
+loss is: 2.7830928325653077
+loss is: 2.7592818260192873
+loss is: 2.750564384460449
+loss is: 2.7873093128204345
+loss is: 2.6686422348022463
+loss is: 2.678245687484741
+loss is: 2.7814780712127685
+loss is: 2.6668997287750242
+loss is: 2.719223165512085
+loss is: 2.5100288867950438
+loss is: 2.4394548416137694
+loss is: 2.540320110321045
+loss is: 2.5656179428100585
+loss is: 2.434697675704956
+loss is: 2.6201202869415283
+acc is: 61.24694376528117
+loss is: 2.448703098297119
+loss is: 2.4865329265594482
+loss is: 2.3220834255218508
+loss is: 2.543026351928711
+loss is: 2.3150885581970213
+loss is: 2.203308582305908
+loss is: 2.4524005889892577
+loss is: 2.2122551918029787
+loss is: 2.29386830329895
+loss is: 2.2947037696838377
+loss is: 2.3441001415252685
+loss is: 2.2528457164764406
+loss is: 2.277445602416992
+loss is: 2.1835916519165037
+loss is: 2.254144382476807
+loss is: 2.128881883621216
+loss is: 2.1604762077331543
+loss is: 2.110977292060852
+loss is: 2.107743334770203
+loss is: 2.2629958629608153
+acc is: 67.35941320293398
+loss is: 2.199524259567261
+loss is: 2.2172779083251952
+loss is: 2.17909095287323
+loss is: 2.0168441772460937
+loss is: 2.084947919845581
+loss is: 2.1617381811141967
+loss is: 2.241016125679016
+loss is: 2.0299446821212768
+loss is: 1.8945062398910522
+loss is: 2.1277842044830324
+loss is: 1.9784404039382935
+loss is: 1.9976557493209839
+loss is: 1.8816769123077393
+loss is: 2.0343908786773683
+loss is: 1.9399276971817017
+loss is: 1.8562435388565064
+loss is: 1.9767693042755128
+loss is: 1.9132160425186158
+loss is: 1.7181750774383544
+loss is: 1.886039638519287
+acc is: 73.4718826405868
+loss is: 1.8994972229003906
+loss is: 2.0424081563949583
+loss is: 1.8609054327011108
+loss is: 1.8732346773147583
+loss is: 1.90484299659729
+loss is: 1.839525055885315
+loss is: 1.9184256792068481
+loss is: 1.864744234085083
+loss is: 1.7001526594161986
+loss is: 1.992794919013977
+loss is: 1.7675687551498414
+loss is: 1.80517635345459
+loss is: 1.793371605873108
+loss is: 1.6574007987976074
+loss is: 1.8427170753479003
+loss is: 1.7714346170425415
+loss is: 1.6027708053588867
+loss is: 1.7778550386428833
+loss is: 1.6103025674819946
+loss is: 1.75957510471344
+acc is: 75.79462102689487
+loss is: 1.782274842262268
+loss is: 1.7169443845748902
+loss is: 1.7182402610778809
+loss is: 1.7458193063735963
+loss is: 1.7231834650039672
+loss is: 1.7490411281585694
+loss is: 1.8373043298721314
+loss is: 1.6506648540496827
+loss is: 1.7359759569168092
+loss is: 1.719168496131897
+loss is: 1.6283493757247924
+loss is: 1.6373841047286988
+loss is: 1.8399823188781739
+loss is: 1.761363434791565
+loss is: 1.6667783975601196
+loss is: 1.600089144706726
+loss is: 1.701317834854126
+loss is: 1.6875234365463256
+loss is: 1.7766037940979005
+loss is: 1.7610007286071778
 acc is: 78.239608801956
-loss is: 1.4913223743438722
-loss is: 1.6015539407730102
-loss is: 1.724885845184326
-loss is: 1.6571393728256225
-loss is: 1.5037904977798462
-loss is: 1.6773433208465576
-loss is: 1.4504740476608275
-loss is: 1.572913408279419
-loss is: 1.6344396829605103
-loss is: 1.6025161266326904
-loss is: 1.5589906454086304
-loss is: 1.5948060750961304
-loss is: 1.4573076248168946
-loss is: 1.6095355033874512
-loss is: 1.552645468711853
-loss is: 1.7604943990707398
-loss is: 1.491450881958008
-loss is: 1.564588189125061
-loss is: 1.62408127784729
-loss is: 1.524919056892395
+loss is: 1.623269248008728
+loss is: 1.5410690307617188
+loss is: 1.623587465286255
+loss is: 1.4865986585617066
+loss is: 1.4385096073150634
+loss is: 1.657357382774353
+loss is: 1.6569633960723877
+loss is: 1.6808549880981445
+loss is: 1.5634378910064697
+loss is: 1.5475647687911986
+loss is: 1.617053174972534
+loss is: 1.4251965284347534
+loss is: 1.5508133888244628
+loss is: 1.728603458404541
+loss is: 1.6059228420257567
+loss is: 1.6089993953704833
+loss is: 1.628394103050232
+loss is: 1.567457365989685
+loss is: 1.4658799171447754
+loss is: 1.442382311820984
 acc is: 80.80684596577017
-loss is: 1.491840386390686
-loss is: 1.5914226055145264
-loss is: 1.6115847110748291
-loss is: 1.6403531312942505
-loss is: 1.3819976329803467
-loss is: 1.7377929449081422
-loss is: 1.4648836612701417
-loss is: 1.5688727617263794
-loss is: 1.592796802520752
-loss is: 1.4556413650512696
-loss is: 1.51473228931427
-loss is: 1.6235496044158935
-loss is: 1.4133731603622437
-loss is: 1.514386248588562
-loss is: 1.5045317173004151
-loss is: 1.5863561868667602
-loss is: 1.5349947452545165
-loss is: 1.5401355743408203
-loss is: 1.4140003442764282
-loss is: 1.495814061164856
-acc is: 81.66259168704157
+loss is: 1.5913652420043944
+loss is: 1.5325236558914184
+loss is: 1.4851800203323364
+loss is: 1.566732931137085
+loss is: 1.3778338193893434
+loss is: 1.5749390602111817
+loss is: 1.6627584457397462
+loss is: 1.4917097091674805
+loss is: 1.5392036199569703
+loss is: 1.4265154361724854
+loss is: 1.593383264541626
+loss is: 1.5237367153167725
+loss is: 1.678047204017639
+loss is: 1.3830020666122436
+loss is: 1.694268536567688
+loss is: 1.4004092931747436
+loss is: 1.3876154899597168
+loss is: 1.6235234975814818
+loss is: 1.518750214576721
+loss is: 1.5337016582489014
+acc is: 83.61858190709046
 </pre>
 </div>
 </div>
@@ -14771,7 +14774,7 @@ acc is: 81.66259168704157
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[65]:</div>
+<div class="prompt input_prompt">In&nbsp;[60]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># TODO: 在测试集上进行测试，需要输出结果</span>
@@ -14792,7 +14795,7 @@ acc is: 81.66259168704157
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>acc is: 82.90598290598291
+<pre>acc is: 83.15018315018315
 </pre>
 </div>
 </div>
@@ -14823,7 +14826,7 @@ acc is: 81.66259168704157
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[60]:</div>
+<div class="prompt input_prompt">In&nbsp;[61]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># TODO: Save the checkpoint </span>
@@ -14872,7 +14875,7 @@ B = checkpoint["B"]</code></pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[61]:</div>
+<div class="prompt input_prompt">In&nbsp;[62]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># TODO: Write a function that loads a checkpoint and rebuilds the model</span>
@@ -14899,7 +14902,7 @@ B = checkpoint["B"]</code></pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[64]:</div>
+<div class="prompt input_prompt">In&nbsp;[63]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">model</span><span class="p">,</span> <span class="n">class_to_idx</span> <span class="o">=</span> <span class="n">load_checkpoint</span><span class="p">(</span><span class="s1">&#39;checkpoint.pth&#39;</span><span class="p">)</span>
@@ -14908,6 +14911,7 @@ B = checkpoint["B"]</code></pre>
 <span class="n">model</span><span class="o">.</span><span class="n">cuda</span><span class="p">()</span>
 <span class="n">model</span><span class="o">.</span><span class="n">eval</span><span class="p">()</span>
 <span class="n">model</span>
+<span class="n">test</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">test_loader</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -14925,7 +14929,6 @@ B = checkpoint["B"]</code></pre>
 
 <div class="output_subarea output_stream output_stderr output_text">
 <pre>/opt/conda/lib/python3.6/site-packages/torchvision-0.2.1-py3.6.egg/torchvision/models/densenet.py:212: UserWarning: nn.init.kaiming_normal is now deprecated in favor of nn.init.kaiming_normal_.
-  nn.init.kaiming_normal(m.weight.data)
 </pre>
 </div>
 </div>
@@ -14937,527 +14940,9 @@ B = checkpoint["B"]</code></pre>
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>{0: &#39;1&#39;, 1: &#39;10&#39;, 2: &#39;100&#39;, 3: &#39;101&#39;, 4: &#39;102&#39;, 5: &#39;11&#39;, 6: &#39;12&#39;, 7: &#39;13&#39;, 8: &#39;14&#39;, 9: &#39;15&#39;, 10: &#39;16&#39;, 11: &#39;17&#39;, 12: &#39;18&#39;, 13: &#39;19&#39;, 14: &#39;2&#39;, 15: &#39;20&#39;, 16: &#39;21&#39;, 17: &#39;22&#39;, 18: &#39;23&#39;, 19: &#39;24&#39;, 20: &#39;25&#39;, 21: &#39;26&#39;, 22: &#39;27&#39;, 23: &#39;28&#39;, 24: &#39;29&#39;, 25: &#39;3&#39;, 26: &#39;30&#39;, 27: &#39;31&#39;, 28: &#39;32&#39;, 29: &#39;33&#39;, 30: &#39;34&#39;, 31: &#39;35&#39;, 32: &#39;36&#39;, 33: &#39;37&#39;, 34: &#39;38&#39;, 35: &#39;39&#39;, 36: &#39;4&#39;, 37: &#39;40&#39;, 38: &#39;41&#39;, 39: &#39;42&#39;, 40: &#39;43&#39;, 41: &#39;44&#39;, 42: &#39;45&#39;, 43: &#39;46&#39;, 44: &#39;47&#39;, 45: &#39;48&#39;, 46: &#39;49&#39;, 47: &#39;5&#39;, 48: &#39;50&#39;, 49: &#39;51&#39;, 50: &#39;52&#39;, 51: &#39;53&#39;, 52: &#39;54&#39;, 53: &#39;55&#39;, 54: &#39;56&#39;, 55: &#39;57&#39;, 56: &#39;58&#39;, 57: &#39;59&#39;, 58: &#39;6&#39;, 59: &#39;60&#39;, 60: &#39;61&#39;, 61: &#39;62&#39;, 62: &#39;63&#39;, 63: &#39;64&#39;, 64: &#39;65&#39;, 65: &#39;66&#39;, 66: &#39;67&#39;, 67: &#39;68&#39;, 68: &#39;69&#39;, 69: &#39;7&#39;, 70: &#39;70&#39;, 71: &#39;71&#39;, 72: &#39;72&#39;, 73: &#39;73&#39;, 74: &#39;74&#39;, 75: &#39;75&#39;, 76: &#39;76&#39;, 77: &#39;77&#39;, 78: &#39;78&#39;, 79: &#39;79&#39;, 80: &#39;8&#39;, 81: &#39;80&#39;, 82: &#39;81&#39;, 83: &#39;82&#39;, 84: &#39;83&#39;, 85: &#39;84&#39;, 86: &#39;85&#39;, 87: &#39;86&#39;, 88: &#39;87&#39;, 89: &#39;88&#39;, 90: &#39;89&#39;, 91: &#39;9&#39;, 92: &#39;90&#39;, 93: &#39;91&#39;, 94: &#39;92&#39;, 95: &#39;93&#39;, 96: &#39;94&#39;, 97: &#39;95&#39;, 98: &#39;96&#39;, 99: &#39;97&#39;, 100: &#39;98&#39;, 101: &#39;99&#39;}
+acc is: 83.15018315018315
 </pre>
 </div>
-</div>
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[64]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>DenseNet(
-  (features): Sequential(
-    (conv0): Conv2d(3, 64, kernel_size=(7, 7), stride=(2, 2), padding=(3, 3), bias=False)
-    (norm0): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-    (relu0): ReLU(inplace)
-    (pool0): MaxPool2d(kernel_size=3, stride=2, padding=1, dilation=1, ceil_mode=False)
-    (denseblock1): _DenseBlock(
-      (denselayer1): _DenseLayer(
-        (norm1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-        (relu1): ReLU(inplace)
-        (conv1): Conv2d(64, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
-        (norm2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-        (relu2): ReLU(inplace)
-        (conv2): Conv2d(128, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
-      )
-      (denselayer2): _DenseLayer(
-        (norm1): BatchNorm2d(96, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-        (relu1): ReLU(inplace)
-        (conv1): Conv2d(96, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
-        (norm2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-        (relu2): ReLU(inplace)
-        (conv2): Conv2d(128, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
-      )
-      (denselayer3): _DenseLayer(
-        (norm1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-        (relu1): ReLU(inplace)
-        (conv1): Conv2d(128, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
-        (norm2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-        (relu2): ReLU(inplace)
-        (conv2): Conv2d(128, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
-      )
-      (denselayer4): _DenseLayer(
-        (norm1): BatchNorm2d(160, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-        (relu1): ReLU(inplace)
-        (conv1): Conv2d(160, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
-        (norm2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-        (relu2): ReLU(inplace)
-        (conv2): Conv2d(128, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
-      )
-      (denselayer5): _DenseLayer(
-        (norm1): BatchNorm2d(192, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-        (relu1): ReLU(inplace)
-        (conv1): Conv2d(192, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
-        (norm2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-        (relu2): ReLU(inplace)
-        (conv2): Conv2d(128, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
-      )
-      (denselayer6): _DenseLayer(
-        (norm1): BatchNorm2d(224, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-        (relu1): ReLU(inplace)
-        (conv1): Conv2d(224, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
-        (norm2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-        (relu2): ReLU(inplace)
-        (conv2): Conv2d(128, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
-      )
-    )
-    (transition1): _Transition(
-      (norm): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-      (relu): ReLU(inplace)
-      (conv): Conv2d(256, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
-      (pool): AvgPool2d(kernel_size=2, stride=2, padding=0)
-    )
-    (denseblock2): _DenseBlock(
-      (denselayer1): _DenseLayer(
-        (norm1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-        (relu1): ReLU(inplace)
-        (conv1): Conv2d(128, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
-        (norm2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-        (relu2): ReLU(inplace)
-        (conv2): Conv2d(128, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
-      )
-      (denselayer2): _DenseLayer(
-        (norm1): BatchNorm2d(160, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-        (relu1): ReLU(inplace)
-        (conv1): Conv2d(160, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
-        (norm2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-        (relu2): ReLU(inplace)
-        (conv2): Conv2d(128, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
-      )
-      (denselayer3): _DenseLayer(
-        (norm1): BatchNorm2d(192, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-        (relu1): ReLU(inplace)
-        (conv1): Conv2d(192, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
-        (norm2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-        (relu2): ReLU(inplace)
-        (conv2): Conv2d(128, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
-      )
-      (denselayer4): _DenseLayer(
-        (norm1): BatchNorm2d(224, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-        (relu1): ReLU(inplace)
-        (conv1): Conv2d(224, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
-        (norm2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-        (relu2): ReLU(inplace)
-        (conv2): Conv2d(128, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
-      )
-      (denselayer5): _DenseLayer(
-        (norm1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-        (relu1): ReLU(inplace)
-        (conv1): Conv2d(256, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
-        (norm2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-        (relu2): ReLU(inplace)
-        (conv2): Conv2d(128, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
-      )
-      (denselayer6): _DenseLayer(
-        (norm1): BatchNorm2d(288, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-        (relu1): ReLU(inplace)
-        (conv1): Conv2d(288, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
-        (norm2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-        (relu2): ReLU(inplace)
-        (conv2): Conv2d(128, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
-      )
-      (denselayer7): _DenseLayer(
-        (norm1): BatchNorm2d(320, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-        (relu1): ReLU(inplace)
-        (conv1): Conv2d(320, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
-        (norm2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-        (relu2): ReLU(inplace)
-        (conv2): Conv2d(128, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
-      )
-      (denselayer8): _DenseLayer(
-        (norm1): BatchNorm2d(352, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-        (relu1): ReLU(inplace)
-        (conv1): Conv2d(352, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
-        (norm2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-        (relu2): ReLU(inplace)
-        (conv2): Conv2d(128, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
-      )
-      (denselayer9): _DenseLayer(
-        (norm1): BatchNorm2d(384, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-        (relu1): ReLU(inplace)
-        (conv1): Conv2d(384, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
-        (norm2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-        (relu2): ReLU(inplace)
-        (conv2): Conv2d(128, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
-      )
-      (denselayer10): _DenseLayer(
-        (norm1): BatchNorm2d(416, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-        (relu1): ReLU(inplace)
-        (conv1): Conv2d(416, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
-        (norm2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-        (relu2): ReLU(inplace)
-        (conv2): Conv2d(128, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
-      )
-      (denselayer11): _DenseLayer(
-        (norm1): BatchNorm2d(448, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-        (relu1): ReLU(inplace)
-        (conv1): Conv2d(448, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
-        (norm2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-        (relu2): ReLU(inplace)
-        (conv2): Conv2d(128, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
-      )
-      (denselayer12): _DenseLayer(
-        (norm1): BatchNorm2d(480, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-        (relu1): ReLU(inplace)
-        (conv1): Conv2d(480, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
-        (norm2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-        (relu2): ReLU(inplace)
-        (conv2): Conv2d(128, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
-      )
-    )
-    (transition2): _Transition(
-      (norm): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-      (relu): ReLU(inplace)
-      (conv): Conv2d(512, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
-      (pool): AvgPool2d(kernel_size=2, stride=2, padding=0)
-    )
-    (denseblock3): _DenseBlock(
-      (denselayer1): _DenseLayer(
-        (norm1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-        (relu1): ReLU(inplace)
-        (conv1): Conv2d(256, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
-        (norm2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-        (relu2): ReLU(inplace)
-        (conv2): Conv2d(128, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
-      )
-      (denselayer2): _DenseLayer(
-        (norm1): BatchNorm2d(288, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-        (relu1): ReLU(inplace)
-        (conv1): Conv2d(288, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
-        (norm2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-        (relu2): ReLU(inplace)
-        (conv2): Conv2d(128, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
-      )
-      (denselayer3): _DenseLayer(
-        (norm1): BatchNorm2d(320, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-        (relu1): ReLU(inplace)
-        (conv1): Conv2d(320, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
-        (norm2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-        (relu2): ReLU(inplace)
-        (conv2): Conv2d(128, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
-      )
-      (denselayer4): _DenseLayer(
-        (norm1): BatchNorm2d(352, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-        (relu1): ReLU(inplace)
-        (conv1): Conv2d(352, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
-        (norm2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-        (relu2): ReLU(inplace)
-        (conv2): Conv2d(128, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
-      )
-      (denselayer5): _DenseLayer(
-        (norm1): BatchNorm2d(384, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-        (relu1): ReLU(inplace)
-        (conv1): Conv2d(384, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
-        (norm2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-        (relu2): ReLU(inplace)
-        (conv2): Conv2d(128, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
-      )
-      (denselayer6): _DenseLayer(
-        (norm1): BatchNorm2d(416, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-        (relu1): ReLU(inplace)
-        (conv1): Conv2d(416, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
-        (norm2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-        (relu2): ReLU(inplace)
-        (conv2): Conv2d(128, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
-      )
-      (denselayer7): _DenseLayer(
-        (norm1): BatchNorm2d(448, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-        (relu1): ReLU(inplace)
-        (conv1): Conv2d(448, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
-        (norm2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-        (relu2): ReLU(inplace)
-        (conv2): Conv2d(128, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
-      )
-      (denselayer8): _DenseLayer(
-        (norm1): BatchNorm2d(480, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-        (relu1): ReLU(inplace)
-        (conv1): Conv2d(480, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
-        (norm2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-        (relu2): ReLU(inplace)
-        (conv2): Conv2d(128, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
-      )
-      (denselayer9): _DenseLayer(
-        (norm1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-        (relu1): ReLU(inplace)
-        (conv1): Conv2d(512, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
-        (norm2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-        (relu2): ReLU(inplace)
-        (conv2): Conv2d(128, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
-      )
-      (denselayer10): _DenseLayer(
-        (norm1): BatchNorm2d(544, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-        (relu1): ReLU(inplace)
-        (conv1): Conv2d(544, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
-        (norm2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-        (relu2): ReLU(inplace)
-        (conv2): Conv2d(128, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
-      )
-      (denselayer11): _DenseLayer(
-        (norm1): BatchNorm2d(576, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-        (relu1): ReLU(inplace)
-        (conv1): Conv2d(576, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
-        (norm2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-        (relu2): ReLU(inplace)
-        (conv2): Conv2d(128, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
-      )
-      (denselayer12): _DenseLayer(
-        (norm1): BatchNorm2d(608, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-        (relu1): ReLU(inplace)
-        (conv1): Conv2d(608, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
-        (norm2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-        (relu2): ReLU(inplace)
-        (conv2): Conv2d(128, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
-      )
-      (denselayer13): _DenseLayer(
-        (norm1): BatchNorm2d(640, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-        (relu1): ReLU(inplace)
-        (conv1): Conv2d(640, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
-        (norm2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-        (relu2): ReLU(inplace)
-        (conv2): Conv2d(128, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
-      )
-      (denselayer14): _DenseLayer(
-        (norm1): BatchNorm2d(672, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-        (relu1): ReLU(inplace)
-        (conv1): Conv2d(672, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
-        (norm2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-        (relu2): ReLU(inplace)
-        (conv2): Conv2d(128, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
-      )
-      (denselayer15): _DenseLayer(
-        (norm1): BatchNorm2d(704, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-        (relu1): ReLU(inplace)
-        (conv1): Conv2d(704, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
-        (norm2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-        (relu2): ReLU(inplace)
-        (conv2): Conv2d(128, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
-      )
-      (denselayer16): _DenseLayer(
-        (norm1): BatchNorm2d(736, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-        (relu1): ReLU(inplace)
-        (conv1): Conv2d(736, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
-        (norm2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-        (relu2): ReLU(inplace)
-        (conv2): Conv2d(128, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
-      )
-      (denselayer17): _DenseLayer(
-        (norm1): BatchNorm2d(768, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-        (relu1): ReLU(inplace)
-        (conv1): Conv2d(768, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
-        (norm2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-        (relu2): ReLU(inplace)
-        (conv2): Conv2d(128, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
-      )
-      (denselayer18): _DenseLayer(
-        (norm1): BatchNorm2d(800, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-        (relu1): ReLU(inplace)
-        (conv1): Conv2d(800, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
-        (norm2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-        (relu2): ReLU(inplace)
-        (conv2): Conv2d(128, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
-      )
-      (denselayer19): _DenseLayer(
-        (norm1): BatchNorm2d(832, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-        (relu1): ReLU(inplace)
-        (conv1): Conv2d(832, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
-        (norm2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-        (relu2): ReLU(inplace)
-        (conv2): Conv2d(128, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
-      )
-      (denselayer20): _DenseLayer(
-        (norm1): BatchNorm2d(864, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-        (relu1): ReLU(inplace)
-        (conv1): Conv2d(864, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
-        (norm2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-        (relu2): ReLU(inplace)
-        (conv2): Conv2d(128, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
-      )
-      (denselayer21): _DenseLayer(
-        (norm1): BatchNorm2d(896, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-        (relu1): ReLU(inplace)
-        (conv1): Conv2d(896, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
-        (norm2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-        (relu2): ReLU(inplace)
-        (conv2): Conv2d(128, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
-      )
-      (denselayer22): _DenseLayer(
-        (norm1): BatchNorm2d(928, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-        (relu1): ReLU(inplace)
-        (conv1): Conv2d(928, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
-        (norm2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-        (relu2): ReLU(inplace)
-        (conv2): Conv2d(128, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
-      )
-      (denselayer23): _DenseLayer(
-        (norm1): BatchNorm2d(960, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-        (relu1): ReLU(inplace)
-        (conv1): Conv2d(960, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
-        (norm2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-        (relu2): ReLU(inplace)
-        (conv2): Conv2d(128, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
-      )
-      (denselayer24): _DenseLayer(
-        (norm1): BatchNorm2d(992, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-        (relu1): ReLU(inplace)
-        (conv1): Conv2d(992, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
-        (norm2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-        (relu2): ReLU(inplace)
-        (conv2): Conv2d(128, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
-      )
-    )
-    (transition3): _Transition(
-      (norm): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-      (relu): ReLU(inplace)
-      (conv): Conv2d(1024, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
-      (pool): AvgPool2d(kernel_size=2, stride=2, padding=0)
-    )
-    (denseblock4): _DenseBlock(
-      (denselayer1): _DenseLayer(
-        (norm1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-        (relu1): ReLU(inplace)
-        (conv1): Conv2d(512, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
-        (norm2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-        (relu2): ReLU(inplace)
-        (conv2): Conv2d(128, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
-      )
-      (denselayer2): _DenseLayer(
-        (norm1): BatchNorm2d(544, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-        (relu1): ReLU(inplace)
-        (conv1): Conv2d(544, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
-        (norm2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-        (relu2): ReLU(inplace)
-        (conv2): Conv2d(128, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
-      )
-      (denselayer3): _DenseLayer(
-        (norm1): BatchNorm2d(576, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-        (relu1): ReLU(inplace)
-        (conv1): Conv2d(576, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
-        (norm2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-        (relu2): ReLU(inplace)
-        (conv2): Conv2d(128, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
-      )
-      (denselayer4): _DenseLayer(
-        (norm1): BatchNorm2d(608, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-        (relu1): ReLU(inplace)
-        (conv1): Conv2d(608, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
-        (norm2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-        (relu2): ReLU(inplace)
-        (conv2): Conv2d(128, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
-      )
-      (denselayer5): _DenseLayer(
-        (norm1): BatchNorm2d(640, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-        (relu1): ReLU(inplace)
-        (conv1): Conv2d(640, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
-        (norm2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-        (relu2): ReLU(inplace)
-        (conv2): Conv2d(128, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
-      )
-      (denselayer6): _DenseLayer(
-        (norm1): BatchNorm2d(672, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-        (relu1): ReLU(inplace)
-        (conv1): Conv2d(672, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
-        (norm2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-        (relu2): ReLU(inplace)
-        (conv2): Conv2d(128, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
-      )
-      (denselayer7): _DenseLayer(
-        (norm1): BatchNorm2d(704, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-        (relu1): ReLU(inplace)
-        (conv1): Conv2d(704, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
-        (norm2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-        (relu2): ReLU(inplace)
-        (conv2): Conv2d(128, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
-      )
-      (denselayer8): _DenseLayer(
-        (norm1): BatchNorm2d(736, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-        (relu1): ReLU(inplace)
-        (conv1): Conv2d(736, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
-        (norm2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-        (relu2): ReLU(inplace)
-        (conv2): Conv2d(128, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
-      )
-      (denselayer9): _DenseLayer(
-        (norm1): BatchNorm2d(768, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-        (relu1): ReLU(inplace)
-        (conv1): Conv2d(768, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
-        (norm2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-        (relu2): ReLU(inplace)
-        (conv2): Conv2d(128, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
-      )
-      (denselayer10): _DenseLayer(
-        (norm1): BatchNorm2d(800, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-        (relu1): ReLU(inplace)
-        (conv1): Conv2d(800, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
-        (norm2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-        (relu2): ReLU(inplace)
-        (conv2): Conv2d(128, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
-      )
-      (denselayer11): _DenseLayer(
-        (norm1): BatchNorm2d(832, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-        (relu1): ReLU(inplace)
-        (conv1): Conv2d(832, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
-        (norm2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-        (relu2): ReLU(inplace)
-        (conv2): Conv2d(128, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
-      )
-      (denselayer12): _DenseLayer(
-        (norm1): BatchNorm2d(864, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-        (relu1): ReLU(inplace)
-        (conv1): Conv2d(864, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
-        (norm2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-        (relu2): ReLU(inplace)
-        (conv2): Conv2d(128, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
-      )
-      (denselayer13): _DenseLayer(
-        (norm1): BatchNorm2d(896, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-        (relu1): ReLU(inplace)
-        (conv1): Conv2d(896, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
-        (norm2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-        (relu2): ReLU(inplace)
-        (conv2): Conv2d(128, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
-      )
-      (denselayer14): _DenseLayer(
-        (norm1): BatchNorm2d(928, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-        (relu1): ReLU(inplace)
-        (conv1): Conv2d(928, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
-        (norm2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-        (relu2): ReLU(inplace)
-        (conv2): Conv2d(128, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
-      )
-      (denselayer15): _DenseLayer(
-        (norm1): BatchNorm2d(960, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-        (relu1): ReLU(inplace)
-        (conv1): Conv2d(960, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
-        (norm2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-        (relu2): ReLU(inplace)
-        (conv2): Conv2d(128, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
-      )
-      (denselayer16): _DenseLayer(
-        (norm1): BatchNorm2d(992, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-        (relu1): ReLU(inplace)
-        (conv1): Conv2d(992, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
-        (norm2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-        (relu2): ReLU(inplace)
-        (conv2): Conv2d(128, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
-      )
-    )
-    (norm5): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-  )
-  (classifier): Sequential(
-    (fc1): Linear(in_features=1024, out_features=500, bias=True)
-    (relu1): ReLU()
-    (fc2): Linear(in_features=500, out_features=128, bias=True)
-    (relu2): ReLU()
-    (fc3): Linear(in_features=128, out_features=102, bias=True)
-    (output): LogSoftmax()
-  )
-)</pre>
-</div>
-
 </div>
 
 </div>
@@ -15500,11 +14985,10 @@ B = checkpoint["B"]</code></pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[66]:</div>
+<div class="prompt input_prompt">In&nbsp;[64]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">PIL</span> <span class="k">import</span> <span class="n">Image</span>
-<span class="k">def</span> <span class="nf">process_image</span><span class="p">(</span><span class="n">image</span><span class="p">):</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">process_image</span><span class="p">(</span><span class="n">image</span><span class="p">):</span>
     <span class="sd">&#39;&#39;&#39; Scales, crops, and normalizes a PIL image for a PyTorch model,</span>
 <span class="sd">        returns an Numpy array</span>
 <span class="sd">    &#39;&#39;&#39;</span>
@@ -15548,7 +15032,7 @@ B = checkpoint["B"]</code></pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[67]:</div>
+<div class="prompt input_prompt">In&nbsp;[65]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">imshow</span><span class="p">(</span><span class="n">image</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
@@ -15588,7 +15072,7 @@ B = checkpoint["B"]</code></pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[68]:</div>
+<div class="prompt input_prompt">In&nbsp;[66]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">img_tensor</span> <span class="o">=</span> <span class="n">process_image</span><span class="p">(</span><span class="n">train_dir</span><span class="o">+</span><span class="s2">&quot;/1/image_06735.jpg&quot;</span><span class="p">)</span>
@@ -15605,13 +15089,13 @@ B = checkpoint["B"]</code></pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[68]:</div>
+    <div class="prompt output_prompt">Out[66]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7f3c92f23128&gt;</pre>
+<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7f52cd86bda0&gt;</pre>
 </div>
 
 </div>
@@ -15665,7 +15149,7 @@ B = checkpoint["B"]</code></pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[71]:</div>
+<div class="prompt input_prompt">In&nbsp;[67]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 不需要修改，运行即可</span>
@@ -15702,7 +15186,7 @@ B = checkpoint["B"]</code></pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[72]:</div>
+<div class="prompt input_prompt">In&nbsp;[68]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">model</span><span class="o">.</span><span class="n">cuda</span><span class="p">()</span>
@@ -15725,10 +15209,10 @@ B = checkpoint["B"]</code></pre>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>tensor([[ 0.4505,  0.1424,  0.0860,  0.0635,  0.0520]], device=&#39;cuda:0&#39;)
-tensor([[ 49,   0,  84,  13,  53]], device=&#39;cuda:0&#39;)
-[0.4505045413970947, 0.14241357147693634, 0.0859593078494072, 0.06351864337921143, 0.05197347700595856]
-[&#39;51&#39;, &#39;1&#39;, &#39;83&#39;, &#39;19&#39;, &#39;55&#39;]
+<pre>tensor([[ 0.2785,  0.1799,  0.1213,  0.1120,  0.0931]], device=&#39;cuda:0&#39;)
+tensor([[   0,   49,   87,   76,  100]], device=&#39;cuda:0&#39;)
+[0.27845871448516846, 0.17992207407951355, 0.12132422626018524, 0.11195589601993561, 0.09307791292667389]
+[&#39;1&#39;, &#39;51&#39;, &#39;86&#39;, &#39;76&#39;, &#39;98&#39;]
 </pre>
 </div>
 </div>
@@ -15772,13 +15256,11 @@ tensor([[ 49,   0,  84,  13,  53]], device=&#39;cuda:0&#39;)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[73]:</div>
+<div class="prompt input_prompt">In&nbsp;[69]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># TODO: Display an image along with the top 5 classes</span>
 <span class="c1"># 参数分别为测试花朵的路径，花朵种类的文件夹名称，模型，以及topk</span>
-<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sb</span>
 <span class="n">base_color</span> <span class="o">=</span> <span class="n">sb</span><span class="o">.</span><span class="n">color_palette</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span>
 <span class="k">def</span> <span class="nf">show_result</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="n">classname</span><span class="p">,</span> <span class="n">model</span><span class="p">,</span> <span class="n">topk</span><span class="p">):</span>
     <span class="n">probs</span><span class="p">,</span> <span class="n">classes</span> <span class="o">=</span> <span class="n">predict</span><span class="p">(</span><span class="n">path</span><span class="p">,</span><span class="n">model</span><span class="p">,</span><span class="n">topk</span><span class="p">)</span>
@@ -15806,7 +15288,7 @@ tensor([[ 49,   0,  84,  13,  53]], device=&#39;cuda:0&#39;)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[74]:</div>
+<div class="prompt input_prompt">In&nbsp;[70]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#直接运行</span>
@@ -15839,9 +15321,9 @@ tensor([[ 49,   0,  84,  13,  53]], device=&#39;cuda:0&#39;)
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>tensor([[ 0.3719,  0.0842,  0.0818,  0.0798,  0.0733]], device=&#39;cuda:0&#39;)
-tensor([[  3,  21,  90,  56,  98]], device=&#39;cuda:0&#39;)
-[0.3718686103820801, 0.08424408733844757, 0.08180424571037292, 0.07980090379714966, 0.07333474606275558]
+<pre>tensor([[ 0.5237,  0.1275,  0.1033,  0.0391,  0.0363]], device=&#39;cuda:0&#39;)
+tensor([[  3,  56,  90,   5,  40]], device=&#39;cuda:0&#39;)
+[0.5236937403678894, 0.1275366246700287, 0.10330028831958771, 0.039064567536115646, 0.03627404570579529]
 </pre>
 </div>
 </div>
@@ -15854,7 +15336,7 @@ tensor([[  3,  21,  90,  56,  98]], device=&#39;cuda:0&#39;)
 
 
 <div class="output_png output_subarea ">
-<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAccAAAD8CAYAAAACNm9oAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAADl0RVh0U29mdHdhcmUAbWF0cGxvdGxpYiB2ZXJzaW9uIDIuMS4wLCBodHRwOi8vbWF0cGxvdGxpYi5vcmcvpW3flQAAF5VJREFUeJzt3Xu0ZGV95vHvQ4ONiDRXTYvAUWg13ERpGRDCeGF5I4pR1CgaUFdYjs5qjTEGFxoZozNoZoRITLRXFoKAl8ErESUgNiBys5tb0whBoTOKjAbQVhG5NL/5o3aPxctpuk6frlN1ur+ftWqdXe9+371/taHrOe/eu+qkqpAkSb+32agLkCRp3BiOkiQ1DEdJkhqGoyRJDcNRkqSG4ShJUsNwlCSpYThKktQwHCVJamw+6gK0fnbccceamJgYdRmSNKssW7bszqraaV39DMdZamJigqVLl466DEmaVZL8+yD9PK0qSVLDcJQkqWE4SpLUMBwlSWoYjpIkNQxHSZIahqMkSQ3DUZKkhuEoSVLDb8iZpZbfvoqJ484ddRkjsfLEw0ddgqSNnDNHSZIahqMkSQ3DUZKkhuEoSVLDcJQkqWE4SpLUMByHLMlpSY7sli9KsrBb/maSbUdbnSRpMn7OcUSq6mWjrkGSNLlNduaY5M+SXJ/kuiRnJHl5kiuTXJPk20me2PU7IcnpSc5PsjLJq5J8LMnyJOcl2aLrt3+Si5MsS/KvSeavY/8rk+zYLX+tG7ciybHDf/WSpEezSYZjkr2A44EXVNUzgXcClwIHVtWzgC8A7+0bsjtwOHAEcCawpKr2Ae4FDu8C8hTgyKraHzgV+MgUSnpLN24hsCjJDtN6gZKkadlUT6u+APhSVd0JUFV3J9kH+GI343sMcFtf/29V1QNJlgNzgPO69uXABPB0YG/ggiR0fe6YQj2LkvxJt7wLsAC4q+3UzSqPBZizzU5T2LwkaSo21XAMUE3bKcDHq+qcJM8DTuhbdx9AVT2U5IGqWjP2IXrHMMCKqjpoyoX09nUYcFBV/TbJRcCWk/WtqsXAYoC58xe09UuSNpBN8rQqcCHw2jWnL5NsD8wDbu/WHz3F7d0M7JTkoG57W3SnbgcxD/hFF4zPAA6c4r4lSRvYJjlzrKoVST4CXJxkNXANvZni2UluB64AnjKF7d3ffVzjE0nm0TuuJwMrBhh+HvC2JNfTC9krpvRiJEkbXH5/hlCzydz5C2r+0SePuoyR8E9WSVpfSZZV1cJ19dtUT6tKkrRWhqMkSQ3DUZKkhuEoSVLDcJQkqWE4SpLU2CQ/57gx2GfneSz1Iw2SNBTOHCVJahiOkiQ1DEdJkhqGoyRJDcNRkqSG4ShJUsNwlCSpYThKktQwHCVJahiOkiQ1DEdJkhqGoyRJDcNRkqSG4ShJUsNwlCSpYThKktQwHCVJahiOkiQ1DEdJkhqGoyRJDcNRkqTG5qMuQOtn+e2rmDju3FGXMTZWnnj4qEuQtBFx5ihJUsNwlCSpYThKktQwHCVJahiOkiQ1DEdJkhqG4waW5JtJth11HZKk9efnHNciyeZV9eBUx1XVy4ZRjyRp5mz0M8ckH0hyU5ILknw+yXuS7J7kvCTLknw3yTO6vqcl+XiSJcBHkxyQ5LIk13Q/n971OybJV7pt3JLkY337W5lkxyQTSW7oa39PkhO65YuSnJTkkiQ/SPKcbnu3JPnwzB4hSVJro545JlkIvBp4Fr3XejWwDFgMvK2qbknyn4B/BF7QDXsacFhVrU6yDXBoVT2Y5DDgv3fbA9iv2+59wM1JTqmqH0+hvPur6tAk7wS+DuwP3A38KMlJVXXXNF66JGkaNupwBA4Bvl5V9wIk+RdgS+C5wNlJ1vSb2zfm7Kpa3S3PA05PsgAoYIu+fhdW1apuuzcCuwFTCcdzup/LgRVVdUe3rVuBXYBHhGOSY4FjAeZss9MUdiVJmoqNPRwzSdtmwC+rar+1jLmnb/lvgSVV9SdJJoCL+tbd17e8mkceywd5+GnrLZv1a8Y/1GzroUm2BUBVLaY362Xu/AW1lvolSdO0sV9zvBR4eZItk2wNHA78FrgtyWsA0vPMtYyfB9zeLR8zxX3/DHhCkh2SzAX+eMrVS5JGYqMOx6r6Pr3Tl9cBXwGWAquAo4C3JrkOWAEcsZZNfAz4H0m+B8yZ4r4fAD4EXAl8A7hpfV6DJGnmpWrjPjuXZOuq+k2SrYBLgGOr6upR1zVdc+cvqPlHnzzqMsaGf7JK0iCSLKuqhevqt7FfcwRYnGRPetf8Tt8YglGSNFwbfThW1RtGXYMkaXbZqK85SpK0PgxHSZIahqMkSY2N/prjxmqfneex1Ds0JWkonDlKktQwHCVJahiOkiQ1DEdJkhqGoyRJDcNRkqSG4ShJUsNwlCSpYThKktQwHCVJahiOkiQ1DEdJkhqGoyRJDcNRkqSG4ShJUsNwlCSpYThKktQwHCVJahiOkiQ1DEdJkhqGoyRJjc0H6ZRkK+AvgV2r6s+TLACeXlXfGGp1Wqvlt69i4rhzR13G2Fl54uGjLkHSRmDQmeNngPuAg7rnPwE+PJSKJEkasUHDcfeq+hjwAEBV3QtkaFVJkjRCg4bj/UkeCxRAkt3pzSQlSdroDHTNEfggcB6wS5KzgIOBY4ZVlCRJozRQOFbVBUmuBg6kdzr1nVV151ArkyRpRKbyUY6dgTnAY4BDk7xqOCVJkjRag36U41RgX2AF8FDXXMBXhlTXjEjyLmBxVf121LVIksbHoNccD6yqPYdayWi8CzgTGDgck8ypqtXT7SNJGl+Dnla9PMnYhmOS9yZZ1C2flOQ73fILk5yZ5J+SLE2yIsl/69YtAp4ELEmypGt7UZLLk1yd5OwkW3ftK5P8TZJLgdck2SPJt5Nc1/XdPcnzkixJ8jlgeTfujUmuSnJtkk8nmdM9TktyQ5LlSf5iTT1JbkxyfZIvzPQxlCT93qAzx9PpBeT/pfcRjgBVVfsOrbKpuYTeN/h8AlgIzE2yBXAI8F3g7Kq6O8kc4MIk+1bVJ5K8G3h+Vd2ZZEfg/cBhVXVPkr8G3g18qNvH76rqEIAkVwInVtVXk2xJ75eMXYADgL2r6rYkfwi8Dji4qh5I8o/AUfROTe9cVXt329q22/5xwFOq6r6+NknSCAwajqcCb6I3I3poHX1HYRmwf5LH0wvvq+mF5B8Bi4DXJjmW3uudD+wJXN9s48Cu/XtJoHfj0eV9678I0O1j56r6KkBV/a5rB7iqqm7r+r8Q2B/4frfuscDPgX8BnprkFOBc4Pyu//XAWUm+BnxtshfZvYZjAeZss9PAB0eSNDWDhuP/qapzhlrJNHQzs5XAm4HL6AXN84HdgXuB9wDPqapfJDkN2HKSzQS4oKpev5bd3NPXb23u6VsOcHpVve8RO0qeCbwYeAfwWuAtwOHAocArgA8k2auqHmxe52JgMcDc+QvqUeqQJE3DoNccb0ryuSSvT/KqNY+hVjZ1l9ALwUvonUp9G3AtsA290FqV5InAS/vG/Bp4fLd8BXBwkj2g92XrSZ7W7qSqfgX8JMkru35zuy9mb10IHJnkCV2/7ZPs1p2+3ayqvgx8AHh2ks2AXapqCfBeYFtg62kcC0nSNAw6c3wsvdOVL+prG7ePcnwXOB64vLtm+Dvgu1V1XZJr6F3ruxX4Xt+YxcC3ktxRVc9Pcgzw+SRzu/XvB/5tkn29Cfh0kg/R+77Z17QdqurGJO8Hzu/C7wF6M8V7gc90bQDvo/f50TOTzKM34zypqn65/odCkjQdqfLs3Gw0d/6Cmn/0yaMuY+z4J6skPZoky6pq4br6DfolAFsCbwX2ou96XVW9Zb0rlCRpTA16zfEM4A/o3URyMfBketfrJEna6AwajntU1QeAe6rqdHp3Vu4zvLIkSRqdQcPxge7nL5PsDcwDJoZSkSRJIzbo3aqLk2xH7+7Nc+h9zOADQ6tKkqQRGjQczwBeTW+2eHrX9sRhFCRJ0qgNGo5fB1bR+5q2+4ZXjga1z87zWOrHFiRpKAYNxydX1UuGWokkSWNi0BtyLkvi3amSpE3CoDPHQ4BjktzGeP7JKkmSNphBw/Gl6+4iSdLGYaBwrKp/H3YhkiSNi0GvOUqStMkwHCVJahiOkiQ1DEdJkhqGoyRJDcNRkqSG4ShJUsNwlCSpYThKktQwHCVJahiOkiQ1DEdJkhqGoyRJDcNRkqSG4ShJUsNwlCSpMdAfO9b4WX77KiaOO3fUZYytlScePuoSJM1izhwlSWoYjpIkNQxHSZIahqMkSQ3DUZKkhuEoSVLDcJQkqbHJhmMSP+MpSZrUrA/HJH+W5Pok1yU5o2vbLcmFXfuFSXbt2k9L8vEkS4CPJjkhyalJLkpya5JFa9nHb5L8ryRXd9vbqWvfL8kV3X6+mmS7rv2iJCcnuSzJDUkO6NpPSHJGku8kuSXJn3ftZyQ5om9/ZyV5xVAPnCRprWZ1OCbZCzgeeEFVPRN4Z7fqH4DPVtW+wFnAJ/qGPQ04rKr+snv+DODFwAHAB5NsMcmuHgdcXVXPBi4GPti1fxb4624/y/vaAR5XVc8F3g6c2te+L3A4cBDwN0meBPwz8ObuNc0Dngt8cyrHQpK04czqcAReAHypqu4EqKq7u/aDgM91y2cAh/SNObuqVvc9P7eq7uu28XPgiZPs5yHgi93ymcAhXYhtW1UXd+2nA4f2jfl8V9MlwDZJtu3av15V93b7WwIc0G1jjyRPAF4PfLmqHmyLSHJskqVJlq7+7apHOy6SpGmY7eEYoAbo19/nnmbdfX3Lqxns+2anus/+52trPwM4it4M8jOTbrBqcVUtrKqFc7aaN0AJkqT1MdvD8ULgtUl2AEiyfdd+GfCn3fJRwKXT3M9mwJHd8huAS6tqFfCLJH/Utb+J3inXNV7X1XQIsKrrD3BEki27mp8HfL9rPw14F0BVrZhmvZKkaZjVd2xW1YokHwEuTrIauAY4BlgEnJrkr4D/oLueNw33AHslWQasogs+4GjgU0m2Am5t9vOLJJcB2wBv6Wu/CjgX2BX426r6afdafpbkB8DXplmrJGmaUjXIGcJNW5LfVNXWU+h/EfCeqlratJ8A/Kaq/uckY7aid1PPs/tmmWs1d/6Cmn/0yYOWtMnxT1ZJmkySZVW1cF39Zvtp1Y1CksOAm4BTBglGSdJwzerTqjNlKrPGrv/z1tJ+wlrav03vNKskaQw4c5QkqWE4SpLUMBwlSWp4zXGW2mfneSz1jkxJGgpnjpIkNQxHSZIahqMkSQ3DUZKkhuEoSVLDcJQkqWE4SpLUMBwlSWoYjpIkNQxHSZIahqMkSQ3DUZKkhuEoSVLDcJQkqWE4SpLUMBwlSWoYjpIkNQxHSZIahqMkSQ3DUZKkhuEoSVJj81EXoPWz/PZVTBx37qjLkKQZtfLEw2dkP84cJUlqGI6SJDUMR0mSGoajJEkNw1GSpIbhKElSYyjhmGTbJG8fxrbXV5Jjkjxp1HVIksbfsGaO2wKThmOSOUPa57ocA6xXOI6i5iR+BlWSRmRY4XgisHuSa5P8XZLnJVmS5HPA8iQTSW5Y0znJe5Kc0C1flOSkJJck+UGS5yT5SpJbkny46zOR5KYkpye5PsmXkmzVrds/ycVJliX51yTzkxwJLATO6mp6bH+xSfZI8u0k1yW5Osnubc1dvzcmuarbxqfXhGaSFyW5vBt7dpKtu/aVST7ajbkqyR5d+05Jvpzk+93j4K79hCSLk5wPfHZI/20kSeswrHA8DvhRVe1XVX/VtR0AHF9Vew4w/v6qOhT4FPB14B3A3sAxSXbo+jwdWFxV+wK/At6eZAvgFODIqtofOBX4SFV9CVgKHNXVdG+zv7OAT1bVM4HnAne0NSf5Q+B1wMFVtR+wGjgqyY7A+4HDqurZ3X7e3bftX1XVAcA/ACd3bX8PnFRVzwFeDfxzX//9gSOq6g0DHCdJ0hDM5Km7q6rqtgH7ntP9XA6sqKo7AJLcCuwC/BL4cVV9r+t3JrAIOI9eiF6QBGAOvw+6SSV5PLBzVX0VoKp+17W3Nb+QXnB9v1v3WODnwIHAnsD3uvbHAJf37eLzfT9P6pYPA/bs+gNs09UBcM4k4b2m1mOBYwHmbLPTo70sSdI0zGQ43tO3/CAPn7Vu2fS9r/v5UN/ymudraq5mTAGhF6YHTaGuPMq6/poDnF5V73vY4OTlwAVV9fq1bKMmWd4MOKgNwS4s+/f58A1VLQYWA8ydv6B9/ZKkDWRYp1V/DTz+Udb/DHhCkh2SzAX+eD32sWuSNSH4euBS4GZgpzXtSbZIstej1VRVvwJ+kuSV3Zi5a65fNi4EjkzyhK7f9kl2A64ADu67nrhVkqf1jXtd3881M8rzgf+6pkOS/ab20iVJwzSUcKyqu+idZrwhyd9Nsv4B4EPAlcA3gJvWYzc/AI5Ocj2wPfBPVXU/cCTw0STXAdfSu4YIcBrwqcluyAHeBCzqtnUZ8AeT1HwjvWuL53f9LgDmV9V/0LsT9vNd+xXAM/qGzk1yJfBO4C+6tkXAwu5mohuBt63H65ckDUmqZt/ZuSQTwDeqau8Rl/KokqwEFlbVnRt623PnL6j5R5+87o6StBGZ7p+sSrKsqhauq5/fkCNJUmNWftC8qlbSuyt1rFXVxKhrkCRNnTNHSZIahqMkSQ3DUZKkhuEoSVJjVt6QI9hn53ksneYtzZKkyTlzlCSpYThKktQwHCVJahiOkiQ1DEdJkhqGoyRJDcNRkqSG4ShJUsNwlCSpYThKktRIVY26Bq2HJL8Gbh51HQPaEbhz1EUMyFo3vNlSJ1jrsIxTrbtV1U7r6uR3q85eN1fVwlEXMYgkS611w5sttc6WOsFah2U21bqGp1UlSWoYjpIkNQzH2WvxqAuYAmsdjtlS62ypE6x1WGZTrYA35EiS9AjOHCVJahiOYyjJS5LcnOSHSY6bZP3cJF/s1l+ZZKJv3fu69puTvHgc60wykeTeJNd2j08Ns84Baz00ydVJHkxyZLPu6CS3dI+jx7zW1X3H9ZwxqPXdSW5Mcn2SC5Ps1rdu3I7ro9U6bsf1bUmWd/VcmmTPvnUz9h4wnVpH8T4wJVXlY4wewBzgR8BTgccA1wF7Nn3eDnyqW/5T4Ivd8p5d/7nAU7rtzBnDOieAG8bsmE4A+wKfBY7sa98euLX7uV23vN041tqt+82YHdfnA1t1y/+l7/+BcTyuk9Y6psd1m77lVwDndcsz9h6wAWqd0feBqT6cOY6fA4AfVtWtVXU/8AXgiKbPEcDp3fKXgBcmSdf+haq6r6puA37YbW/c6pxp66y1qlZW1fXAQ83YFwMXVNXdVfUL4ALgJWNa60wbpNYlVfXb7ukVwJO75XE8rmurdaYNUuuv+p4+Dlhz88hMvgdMt9axZjiOn52BH/c9/0nXNmmfqnoQWAXsMODYcagT4ClJrklycZI/GlKNU6l1GGPXx3T3t2WSpUmuSPLKDVvaI0y11rcC31rPsdM1nVphDI9rknck+RHwMWDRVMZuQNOpFWb2fWBK/Iac8TPZzKr9TWttfQYZu6FMp847gF2r6q4k+wNfS7JX8xvmhjSd4zKTx3RD7G/XqvppkqcC30myvKp+tIFqaw1ca5I3AguB/zzVsRvIdGqFMTyuVfVJ4JNJ3gC8Hzh60LEb0HRqnen3gSlx5jh+fgLs0vf8ycBP19YnyebAPODuAceOvM7ulM9dAFW1jN41i6cNqc5Bax3G2PUxrf1V1U+7n7cCFwHP2pDFNQaqNclhwPHAK6rqvqmM3YCmU+tYHtc+XwDWzGbH8rj2+f+1juB9YGpGfdHTx8Mf9Gbzt9K7mL7mAvdeTZ938PAbXf53t7wXD78YfyvDuyFnOnXutKYuehfybwe2H+Ux7et7Go+8Iec2ejeNbNctj2ut2wFzu+UdgVtobo4Ywf8Dz6L3pregaR+74/ootY7jcV3Qt/xyYGm3PGPvARug1hl9H5jyaxt1AT4m+Y8CLwP+rfuHenzX9iF6v80CbAmcTe9i+1XAU/vGHt+Nuxl46TjWCbwaWNH9Q7oaePkYHNPn0Pst+B7gLmBF39i3dK/hh8Cbx7VW4LnA8u64LgfeOga1fhv4GXBt9zhnjI/rpLWO6XH9++7f0LXAEvoCaSbfA6ZT6yjeB6by8BtyJElqeM1RkqSG4ShJUsNwlCSpYThKktQwHCVJahiOkiQ1DEdJkhqGoyRJjf8Hm1U3eDUIDMEAAAAASUVORK5CYII=
+<img src="data:image/png;base64,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
 "
 >
 </div>

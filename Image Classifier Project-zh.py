@@ -21,7 +21,7 @@
 # 
 # 首先，导入你所需的软件包。建议在代码开头导入所有软件包。当你创建此 notebook 时，如果发现你需要导入某个软件包，确保在开头导入该软件包。
 
-# In[48]:
+# In[49]:
 
 
 # Imports here
@@ -38,6 +38,9 @@ import torchvision.models as models
 import matplotlib.pyplot as plt
 from collections import OrderedDict
 import json
+import pandas as pd
+import seaborn as sb
+from PIL import Image
 
 
 # ## 加载数据
@@ -48,7 +51,7 @@ import json
 # 
 # 对于所有三个数据集，你都需要将均值和标准差标准化到网络期望的结果。均值为 `[0.485, 0.456, 0.406]`，标准差为 `[0.229, 0.224, 0.225]`。这样使得每个颜色通道的值位于 -1 到 1 之间，而不是 0 到 1 之间。
 
-# In[49]:
+# In[50]:
 
 
 train_dir = '/data/flowers/train'
@@ -62,7 +65,7 @@ test_dir = '/data/flowers/test'
 # - datasets设置时注意参数的变化（目录的不同）
 # - loader设置时，train的loader的参数注意设置：shuffle = True，来增加训练图像时的随机性。
 
-# In[50]:
+# In[51]:
 
 
 #TODO: 定义transforms
@@ -91,7 +94,7 @@ test_loader = torch.utils.data.DataLoader(test_datasets, batch_size=20)
 # 
 # 你还需要加载从类别标签到类别名称的映射。你可以在文件 `cat_to_name.json` 中找到此映射。它是一个 JSON 对象，可以使用 [`json` 模块](https://docs.python.org/2/library/json.html)读取它。这样可以获得一个从整数编码的类别到实际花卉名称的映射字典。
 
-# In[51]:
+# In[52]:
 
 
 
@@ -121,7 +124,7 @@ with open('cat_to_name.json', 'r') as f:
 # 提示1：
 # - 挑选一个模型，加载预训练模型（既然是*预*训练的模型，那么注意参数pretrained应为True）
 
-# In[52]:
+# In[53]:
 
 
 # TODO
@@ -132,7 +135,7 @@ model.cuda()
 # 提示2：
 # - [冻结模型梯度权重](https://pytorch.org/docs/stable/notes/autograd.html?highlight=param%20requires_grad)，设置每一层的param.requires_grad标志
 
-# In[53]:
+# In[54]:
 
 
 # TODO
@@ -145,7 +148,7 @@ for param in model.parameters():
 # - 修改classifier层的主要目的是为了适应我们的分类要求，即最终的输出层要输出102种花卉分类（即要有一层全连接层输出为102，**不要**在输出层后加dropout）
 # - 全连接层后使用[LogSoftmax](https://pytorch.org/docs/stable/nn.html?highlight=nllloss#torch.nn.LogSoftmax)或者[softmax](https://pytorch.org/docs/stable/nn.html?highlight=nllloss#torch.nn.softmax)，来得出每种花的概率
 
-# In[54]:
+# In[55]:
 
 
 from collections import OrderedDict
@@ -170,7 +173,7 @@ model.cuda()
 # - 设置[损失函数](https://pytorch.org/docs/stable/nn.html?highlight=nllloss#torch.nn.NLLLoss)
 # - 设置[优化器](https://pytorch.org/docs/stable/optim.html)
 
-# In[55]:
+# In[56]:
 
 
 # TODO
@@ -184,7 +187,7 @@ optimizer = optim.Adam(model.classifier.parameters(), lr=0.001)
 # - 注意输出训练测试过程，把控模型是否欠拟合或者过拟合
 # - 模型训练时要model.train()，模型测试时要model.eval()，让模型进入训练或者测试的模式中
 
-# In[56]:
+# In[57]:
 
 
 # TODO: 训练网络，需要有loss和accuracy打印输出
@@ -208,7 +211,7 @@ def train(model, loader):
             train_loss = 0
 
 
-# In[57]:
+# In[58]:
 
 
 # TODO:测试网络，使用验证集或者测试集，训练模型时使用验证集，测试模型最终结果使用测试集
@@ -228,7 +231,7 @@ def test(model, loader):
         print(f"acc is: {avg_acc}")
 
 
-# In[58]:
+# In[59]:
 
 
 epoch = 10#TODO 修改epoch次数
@@ -241,7 +244,7 @@ for _ in range(1, epoch):
 # 
 # 建议使用网络在训练或验证过程中从未见过的测试数据测试训练的网络。这样，可以很好地判断模型预测全新图像的效果。用网络预测测试图像，并测量准确率，就像验证过程一样。如果模型训练良好的话，你应该能够达到大约 70% 的准确率。
 
-# In[65]:
+# In[60]:
 
 
 # TODO: 在测试集上进行测试，需要输出结果
@@ -256,7 +259,7 @@ test(model, test_loader)
 # - 创建checkpoint字典，字典中最少需要包含模型model相关和题目中要求的image_datasets['train'].class_to_idx
 # - 使用torch.save保存checkpoint字典
 
-# In[60]:
+# In[61]:
 
 
 # TODO: Save the checkpoint 
@@ -287,7 +290,7 @@ torch.save(checkpoint, 'checkpoint.pth')
 # - image_datasets['train'].class_to_idx，这个是指花朵本身对应的文件夹名称（数字）到模型预测出来的名称（数字）的一个对应关系，是一个字典形式，为了后面方便查询（通过预测出来的名称来得到真正的花朵所在文件夹的名称），这里需要将class_to_idx这个字典键key和值value颠倒过来
 # - 题目要求是函数，所以函数最终需要返回可以用于预测的模型以及颠倒后的class_to_idx
 
-# In[61]:
+# In[62]:
 
 
 # TODO: Write a function that loads a checkpoint and rebuilds the model
@@ -307,7 +310,7 @@ def load_checkpoint(filepath):
     return model,checkpoint['class_to_idx']
 
 
-# In[64]:
+# In[63]:
 
 
 model, class_to_idx = load_checkpoint('checkpoint.pth')
@@ -316,6 +319,7 @@ print(class_to_idx)
 model.cuda()
 model.eval()
 model
+test(model, test_loader)
 
 
 # # 类别推理
@@ -340,10 +344,9 @@ model
 # - 运行下面的测试，如果出现下面的图，则编写正确：
 # <img src='assets/1_flower.png'>
 
-# In[66]:
+# In[64]:
 
 
-from PIL import Image
 def process_image(image):
     ''' Scales, crops, and normalizes a PIL image for a PyTorch model,
         returns an Numpy array
@@ -375,7 +378,7 @@ def process_image(image):
 
 # 要检查你的项目，可以使用以下函数来转换 PyTorch 张量并将其显示在  notebook 中。如果 `process_image` 函数可行，用该函数运行输出应该会返回原始图像（但是剪裁掉的部分除外）。
 
-# In[67]:
+# In[65]:
 
 
 def imshow(image, ax=None, title=None):
@@ -402,7 +405,7 @@ def imshow(image, ax=None, title=None):
 
 # 测试一下，跟提示中出现同样的花朵后才可进行下一道题：
 
-# In[68]:
+# In[66]:
 
 
 img_tensor = process_image(train_dir+"/1/image_06735.jpg")
@@ -428,7 +431,7 @@ print(classes)
 > ['70', '3', '45', '62', '55']
 
 
-# In[71]:
+# In[67]:
 
 
 # 不需要修改，运行即可
@@ -452,7 +455,7 @@ def predict(image_path, model, topk=5):
 
 # 尝试调用预测一下，如果你的模型测出来概率最高的那个种类是1，即可进行下一道题的操作，否则你可能需要反复修改之前所有涉及到模型的问题，或者检查下加载检查点中的class_to_idx是否正确颠倒。
 
-# In[72]:
+# In[68]:
 
 
 model.cuda()
@@ -472,13 +475,11 @@ print(classes)
 # 提示：
 # - cat_to_name.json是文件夹的目录和真实花朵名称的对应关系，通过上一步predict得出的index对应到cat_to_name即可得到名称
 
-# In[73]:
+# In[69]:
 
 
 # TODO: Display an image along with the top 5 classes
 # 参数分别为测试花朵的路径，花朵种类的文件夹名称，模型，以及topk
-import pandas as pd
-import seaborn as sb
 base_color = sb.color_palette()[0]
 def show_result(path, classname, model, topk):
     probs, classes = predict(path,model,topk)
@@ -493,7 +494,7 @@ def show_result(path, classname, model, topk):
 
 # 接下来测试一下，希望你绘制的图中，概率最高的花朵种类名称为trumpet creeper。
 
-# In[74]:
+# In[70]:
 
 
 #直接运行
