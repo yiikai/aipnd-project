@@ -41,6 +41,7 @@ import json
 import pandas as pd
 import seaborn as sb
 from PIL import Image
+from collections import OrderedDict
 
 
 # ## 加载数据
@@ -151,7 +152,6 @@ for param in model.parameters():
 # In[55]:
 
 
-from collections import OrderedDict
 classifier = nn.Sequential(OrderedDict([
                           ('fc1', nn.Linear(1024, 500)),
                           ('drop1',nn.Dropout(0.5)),
